@@ -1,0 +1,12 @@
+{
+    "frontend":["React","jQuery","JavaScript/ES6+","Razor","Material-UI","Material Table","JSX","JSS","Boostrap","CSS3","AJAX","HTML5","DOM"],
+    "frontend-UPCOMING":["React","[Redux]","[Vue]","jQuery","JavaScript/ES6+","Razor","Material-UI","Material Table","JSX","JSS","Boostrap","CSS3","AJAX","HTML5","DOM"],
+    "backend":["Node","Express","Mongoose","RESTful API","Python3","Django","JSON","C#","ASP .Net Core 2.2","Entity Framework Core","LINQ","T-SQL"],
+    "framework":["React (library)","jQuery (library)","Express","ASP.NET MVC","Django"],
+    "framework-UPCOMING":["React (library)","[Vue]","jQuery (library)","Express","ASP.NET MVC","Django"],
+    "database":["MongoDB","MySQL","SQLite","MS SQL Server 2012","Oracle 12c"],
+    "deployment":["AWS EC2","GitHub"],
+    "deployment-UPCOMING":["AWS EC2","[Firebase]","[Vercel]","GitHub"],
+    "tool":["Git","GitHub","VS Code","Postman","MySQL Workbench","MS SQL Server Management Studio (SSMS)","Oracle SQL Developer 18.2","MS Visual Studio 2012","Team Foundation Server (TFS) 2015","Eclipse Photon","Nginx Web Server"],
+    "version control":["Git","TFS"]
+}

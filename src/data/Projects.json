@@ -1,0 +1,34 @@
+[
+    {   
+        "name": "Freeze-Or-Spoil",
+        "description":"A freezer food storage tracking Single Page App in MERN",
+        "status": "GitHub/Live/InDev",
+        "category": ["Utility","Kitchen"],
+        "date":"(MMMYYYY)",
+        "frontend-Array":["React","Material UI","Material Table","Axios","Reach/Route","Moment","JavaScript","CSS3","HTML5"],
+        "frontend-String":"React, Material UI, Material Table, Axios, Reach/Route, Moment, JavaScript, JSX, CSS3, HTML5",
+        "backend":["Node","Express","Mongoose"],
+        "database":"MongoDB",
+        "deployment":"GitHub & AWS",
+        "Links":{
+            "repo":"https://github.com/geeeedev/....",
+            "site":""
+        }
+    },
+    {   
+        "name": "",
+        "description":"",
+        "status": "",
+        "category": ["","",""],
+        "date":"(MMMYYYY)",
+        "frontend-Array":["React","Material UI","Material Table","Axios","Reach/Route","Moment","JavaScript","CSS3","HTML5"],
+        "frontend-String":"...depends on how I code/use this - React, Material UI, Material Table, Axios, Reach/Route, Moment, JavaScript, JSX, CSS3, HTML5",
+        "backend":["Node","Express","Mongoose"],
+        "database":"MongoDB",
+        "deployment":"GitHub & AWS",
+        "Links":{
+            "repo":"https://github.com/geeeedev/....",
+            "site":""
+        }
+    }
+]

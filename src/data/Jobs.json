@@ -1,0 +1,21 @@
+[
+    {
+        "title":"System Developer",
+        "worked on":"Java, PL/SQL, TFS, JIRA, Confluence",
+        "worked on-ARRAY":["Java","PL/SQL","TFS","JIRA","Confluence"],
+        "company":"Union Bank",
+        "from":"08/2018",
+        "to":"02/2020",
+        "Location":"LA, CA"
+    },
+    {
+        "title":"Client Solution Developer",
+        "worked on":"C#, .Net, T-SQL, JavaScript, CSS, HTML",
+        "worked on-ARRAY":["C#",".Net","T-SQL","JavaScript","CSS","HTML"],
+        "company":"Wedbush Securities, Inc",
+        "from":"05/2016",
+        "to":"07/2018",
+        "Location":"LA, CA"
+    }
+    
+]

@@ -9,7 +9,7 @@
         "frontend-String":"React, Material UI, Material Table, Axios, Reach/Route, Moment, JavaScript, JSX, CSS3, HTML5",
         "backend":["Node","Express","Mongoose"],
         "database":"MongoDB",
-        "deployment":"GitHub & AWS",
+        "deployment":"AWS",
         "Links":{
             "repo":"https://github.com/geeeedev/....",
             "site":""

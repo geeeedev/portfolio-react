@@ -1,32 +1,48 @@
 [
     {   
+        "name": "The Shopping List App",
+        "description":"A shopping list Single Page App built in React using Styled Component",
+        "status": "Live",
+        "category": ["Utility","Shopping"],
+        "date":"Dec 2020",
+        "frontendAry":["React","Styled Component","JavaScript","CSS3","HTML5"],
+        "frontendStr":"React, Styled Component, JavaScript, JSX, CSS3, HTML5",
+        "backend":null,
+        "database":"",
+        "deployment":"GitHub",
+        "links":{
+            "repo":"https://github.com/geeeedev/shopping-list-app",
+            "site":"https://geeeedev.github.io/shopping-list-app/"
+        }
+    },
+    {   
         "name": "Freeze-Or-Spoil",
         "description":"A freezer food storage tracking Single Page App in MERN",
-        "status": "GitHub/Live/InDev",
+        "status": "GitHub Repo",
         "category": ["Utility","Kitchen"],
         "date":"(MMMYYYY)",
-        "frontend-Array":["React","Material UI","Material Table","Axios","Reach/Route","Moment","JavaScript","CSS3","HTML5"],
-        "frontend-String":"React, Material UI, Material Table, Axios, Reach/Route, Moment, JavaScript, JSX, CSS3, HTML5",
+        "frontendAry":["React","Material UI","Material Table","Axios","Reach/Route","Moment","JavaScript","CSS3","HTML5"],
+        "frontendStr":"React, Material UI, Material Table, Axios, Reach/Route, Moment, JavaScript, JSX, CSS3, HTML5",
         "backend":["Node","Express","Mongoose"],
         "database":"MongoDB",
         "deployment":"AWS",
-        "Links":{
+        "links":{
             "repo":"https://github.com/geeeedev/....",
             "site":""
         }
     },
     {   
-        "name": "",
+        "name": "Example3",
         "description":"",
         "status": "",
         "category": ["","",""],
         "date":"(MMMYYYY)",
-        "frontend-Array":["React","Material UI","Material Table","Axios","Reach/Route","Moment","JavaScript","CSS3","HTML5"],
-        "frontend-String":"...depends on how I code/use this - React, Material UI, Material Table, Axios, Reach/Route, Moment, JavaScript, JSX, CSS3, HTML5",
+        "frontendAry":["React","Material UI","Material Table","Axios","Reach/Route","Moment","JavaScript","CSS3","HTML5"],
+        "frontendStr":"...depends on how I code/use this - React, Material UI, Material Table, Axios, Reach/Route, Moment, JavaScript, JSX, CSS3, HTML5",
         "backend":["Node","Express","Mongoose"],
         "database":"MongoDB",
         "deployment":"GitHub & AWS",
-        "Links":{
+        "links":{
             "repo":"https://github.com/geeeedev/....",
             "site":""
         }

@@ -7,6 +7,6 @@
     "database":["MongoDB","MySQL","SQLite","MS SQL Server 2012","Oracle 12c"],
     "deployment":["AWS EC2","GitHub"],
     "deployment-UPCOMING":["AWS EC2","[Firebase]","[Vercel]","GitHub"],
-    "tool":["Git","GitHub","VS Code","Postman","MySQL Workbench","MS SQL Server Management Studio (SSMS)","Oracle SQL Developer 18.2","MS Visual Studio 2012","Team Foundation Server (TFS) 2015","Eclipse Photon","Nginx Web Server"],
+    "tool":["Git","GitHub","VS Code","Postman","Nginx Web Server","MySQL Workbench","MS SQL Server Management Studio (SSMS)","Oracle SQL Developer 18.2","MS Visual Studio 2012","Team Foundation Server (TFS) 2015","Eclipse Photon"],
     "version control":["Git","TFS"]
 }

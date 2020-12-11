@@ -55,17 +55,15 @@ const Project = ({ projDataObj }) => {
         )}
       </ul>
       <ul>
-        {projDataObj.deployment ? (
+        {projDataObj.deployment && (
           <>
             <h5>Deployment: </h5> <p>{projDataObj.deployment} </p>
           </>
-        ) : (
-          ""
         )}
       </ul>
 
       {/* image to click to */}
-      {projDataObj.links.site ? (
+      {projDataObj.links.site && (
         <p>
           <a
             className="App-link"
@@ -76,8 +74,6 @@ const Project = ({ projDataObj }) => {
             Check Out Live Project
           </a>
         </p>
-      ) : (
-        ""
       )}
 
       {/* image to click to */}

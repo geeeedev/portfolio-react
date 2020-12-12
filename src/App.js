@@ -2,10 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 import PortfolioUI from "./components/PortfolioUI"
+import {GlobalStyle} from "./components/StyledCSS"
 
 function App() {
   return (
     <div className="App">
+      <GlobalStyle darkMode />
       <header className="App-header">
        Portfolio Header HERE
       </header>

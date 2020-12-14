@@ -44,7 +44,7 @@ export const Header = styled.header`
 
 export const NavLink = styled.a`
   color: #61dafb; //lightBlue
-  text-decoration: none !important;
+  text-decoration: none !important; //overriding bootstrap's css
   padding: 0px 5px;
   border-radius: 5px;
   font-size: 1.25vw; //proportion to viewport

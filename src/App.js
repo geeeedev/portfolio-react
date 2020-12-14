@@ -3,7 +3,7 @@ import './App.css';
 
 import PortfolioUI from "./components/PortfolioUI"
 import {GlobalStyle} from "./components/StyledCSS"
-import Intro from './components/Intro';
+import About from './components/About';
 import NavHeader from './components/Header';
 
 function App() {
@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <GlobalStyle darkMode />
       <NavHeader />
-      <img src={logo} className="App-logo" alt="logo" />
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
       
       <PortfolioUI />
-      <hr />
-      <Intro />
+      {/* <hr /> */}
+      <About />
       {/* <a
           className="App-link"
           href="https://reactjs.org"

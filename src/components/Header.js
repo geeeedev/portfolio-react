@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Img, HambgBar, Header, NavLink, Object } from "./StyledHeader";
+import { Img, HambgBar, Header, NavLink } from "./StyledHeader";
 import HeaderImg from "../img/HeaderImg.png";
 import NavHambg from "../img/NavHambgGray.png";
 import CV from "../data/GwennieLauResume.pdf";
@@ -9,17 +9,19 @@ import Modal from "react-bootstrap/Modal";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavHeader = () => {
+
   const [showModal, setShowModal] = useState(false);
+
   return (
     <>
-      <Img src={HeaderImg} alt="Header Image" />
+      <Img src={HeaderImg} alt="Header Image - Griffith Park Sunset" />
       <Header>
         <HambgBar src={NavHambg} alt="" />
         <NavLink href="#proj"> Projects </NavLink>
         <NavLink href="#skill"> Skills </NavLink>
         <NavLink href="#about"> About </NavLink>
         <NavLink href="#contact"> Contact </NavLink>
-        <NavLink href="#contact" onClick={() => setShowModal(true)}>
+        <NavLink href="#resume" onClick={() => setShowModal(true)}>
           Resume
         </NavLink>
       </Header>
@@ -37,7 +39,7 @@ const NavHeader = () => {
           <object
             type="application/pdf"
             data={CV}
-            width="780"
+            width="100%"
             height="1000"
           ></object>
         </Modal.Body>

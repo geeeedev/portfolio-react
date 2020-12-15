@@ -16,6 +16,7 @@ const NavHeader = () => {
     <>
       <Img src={HeaderImg} alt="Header Image - Griffith Park Sunset" />
       <Header>
+      {/* <SocialMediaIconList />  {/* float left? */}
         <HambgBar src={NavHambg} alt="" />
         <NavLink href="#proj"> Projects </NavLink>
         <NavLink href="#skill"> Skills </NavLink>

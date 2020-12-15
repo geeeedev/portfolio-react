@@ -4,11 +4,13 @@ import { SocialMediaIcons } from "./StyledSocialMediaIcon";
 
 const SocialMediaIconList = () => {
   return (
+    <>
     <SocialMediaIcons>
       <AnimatedSocialIcon
         brandName="github"
         url="https://github.com/geeeedev"
-        defaultColor="#b6c3d9"
+        // defaultColor="#b6c3d9"  //orig
+        defaultColor="#6A737D"  
         hoverColor="#15202B"
         animation="grow"
         animationDuration={1}
@@ -39,7 +41,10 @@ const SocialMediaIconList = () => {
         style={{ padding: "3em" }}
         newPage={true}
       />
+      
     </SocialMediaIcons>
+    <p>&copy; YYYY Gwennie Lau</p>
+    </>
   );
 };
 

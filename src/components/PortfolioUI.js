@@ -4,16 +4,16 @@ import Project from "./Project";
 import Skills from "../data/Skills.json";
 import Skill from "./Skill";
 
-import SocialMediaIconList from "./SocialMediaIconList";
+// import SocialMediaIconList from "./SocialMediaIconList";
 
 const PortfolioUI = () => {
   return (
     <>
-      <Skill skillDataObj={Skills} />
-      {Projects.map((proj) => (
-        <Project projDataObj={proj} />
+      {/* <Skill skillDataObj={Skills} /> */}
+      {Projects.map((proj, idx) => (
+        <Project projDataObj={proj} idx={idx}/>
       ))}
-      <SocialMediaIconList />
+      {/* <SocialMediaIconList /> */}
     </>
   );
 };

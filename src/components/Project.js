@@ -21,8 +21,10 @@
  */
 
 import React from "react";
+import { Row, Col, ImgProj, Tooltip } from "./StyledProject";
+import projPic from "../img/IMG_4000.JPG";
 
-const Project = ({ projDataObj }) => {
+const Project = ({ projDataObj, idx }) => {
   return (
     <>
       {/* have a main image? 
@@ -30,63 +32,79 @@ const Project = ({ projDataObj }) => {
       takes to live site, or 
       takes to GitHub if cannot be live */}
       {/* <Container> */}
-      <h3>{projDataObj.name}</h3>
-      <h4>{projDataObj.description}</h4>
-      <p>{projDataObj.status}</p>
-      <ul>
-        <h5>Frontend: </h5>
-        {projDataObj.frontendAry.map((each) => (
-          <li>{each}</li>
-        ))}
-      </ul>
-      <ul>
-        {projDataObj.backend ? <h5>Backend: </h5> : ""}
-        {projDataObj.backend
-          ? projDataObj.backend.map((each) => <li>{each}</li>)
-          : ""}
-      </ul>
-      <ul>
-        {projDataObj.database ? (
-          <>
-            <h5>Database: </h5> <p>{projDataObj.database} </p>
-          </>
-        ) : (
-          ""
-        )}
-      </ul>
-      <ul>
-        {projDataObj.deployment && (
-          <>
-            <h5>Deployment: </h5> <p>{projDataObj.deployment} </p>
-          </>
-        )}
-      </ul>
+      <Row key={idx}>
+        <Col idx={idx}>
+          {/* image to click to */}
+          {projDataObj.links.site && (
+            <>
+              <a
+                className="App-link"
+                href={projDataObj.links.site}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* Check Out Live Project */}
+                <ImgProj src={projPic} alt="Proj Main Screenshot"></ImgProj>
+              </a>
+              <Tooltip>Click for Live Project</Tooltip>
+            </>
+          )}
 
-      {/* image to click to */}
-      {projDataObj.links.site && (
-        <p>
+          {/* image to click to */}
+          {/* <p> */}
           <a
             className="App-link"
-            href={projDataObj.links.site}
+            href={projDataObj.links.repo}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Check Out Live Project
+            Source Code on GitHub
           </a>
-        </p>
-      )}
 
-      {/* image to click to */}
-      <p>
-        <a
+          {/* <a
           className="App-link"
-          href={projDataObj.links.repo}
+          href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Source Code on GitHub
-        </a>
-      </p>
+        >click ...</a> */}
+          {/* </p> */}
+        </Col>
+
+        <Col>
+          <h1>{idx}</h1>
+          <h3>{projDataObj.name}</h3>
+          <h4>{projDataObj.description}</h4>
+          <p>{projDataObj.status}</p>
+          <ul>
+            <h5>Frontend: </h5>
+            {projDataObj.frontendAry.map((each) => (
+              <li>{each}</li>
+            ))}
+          </ul>
+          <ul>
+            {projDataObj.backend ? <h5>Backend: </h5> : ""}
+            {projDataObj.backend
+              ? projDataObj.backend.map((each) => <li>{each}</li>)
+              : ""}
+          </ul>
+          <ul>
+            {projDataObj.database ? (
+              <>
+                <h5>Database: </h5> <p>{projDataObj.database} </p>
+              </>
+            ) : (
+              ""
+            )}
+          </ul>
+          <ul>
+            {projDataObj.deployment && (
+              <>
+                <h5>Deployment: </h5> <p>{projDataObj.deployment} </p>
+              </>
+            )}
+          </ul>
+        </Col>
+      </Row>
     </>
   );
 };

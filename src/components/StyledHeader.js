@@ -38,6 +38,7 @@ export const Header = styled.header`
     color: #61dafb;
     font-weight: 500;
   }
+  z-index: 10;
 
 //   outline: 2px dotted red;
 `;

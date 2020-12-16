@@ -1,3 +1,4 @@
+
 [
     {   
         "name": "The Shopping List App",
@@ -13,7 +14,8 @@
         "links":{
             "repo":"https://github.com/geeeedev/shopping-list-app",
             "site":"https://geeeedev.github.io/shopping-list-app/"
-        }
+        },
+        "image":"https://s3.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/HobbyHub2.png"
     },
     {   
         "name": "Freeze-Or-Spoil",
@@ -27,9 +29,11 @@
         "database":"MongoDB",
         "deployment":"AWS",
         "links":{
-            "repo":"https://github.com/geeeedev/....",
-            "site":""
-        }
+            "repo":"https://github.com/geeeedev/Freeze-Or-Spoil",
+            "site":"https://github.com/geeeedev/Freeze-Or-Spoil"
+        },
+        "image":"https://s3.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/HobbyHub2.png"
+        
     },
     {   
         "name": "Example3",
@@ -44,7 +48,8 @@
         "deployment":"GitHub & AWS",
         "links":{
             "repo":"https://github.com/geeeedev/....",
-            "site":""
-        }
+            "site":"https://i.redd.it/ko8rxxqv1yty.jpg"
+        },
+        "image":"https://i.redd.it/ko8rxxqv1yty.jpg"
     }
 ]

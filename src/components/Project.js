@@ -1,36 +1,12 @@
-/** build project compoment template
- *  per project {} only
- * [
- *  {   
-        "name": "Freeze-Or-Spoil",
-        "description":"A freezer food storage tracking Single Page App in MERN",
-        "status": "GitHub/Live/InDev",
-        "category": ["Utility","Kitchen"],
-        "date":"(MMMYYYY)",
-        "frontend-Array":["React","Material UI","Material Table","Axios","Reach/Route","Moment","JavaScript","CSS3","HTML5"],
-        "frontend-String":"React, Material UI, Material Table, Axios, Reach/Route, Moment, JavaScript, JSX, CSS3, HTML5",
-        "backend":["Node","Express","Mongoose"],
-        "database":"MongoDB",
-        "deployment":"GitHub & AWS",
-        "Links":{
-            "repo":"https://github.com/geeeedev/....",
-            "site":""
-        }
-    },
- * ]
- */
-
 import React from "react";
 import { Row, Col, ImgProj, Tooltip } from "./StyledProject";
-import projPic from "../img/IMG_4000.JPG";
+// import projPic from "../img/IMG_4000.JPG";
 
 const Project = ({ projDataObj, idx }) => {
+
+  console.log(`CurrImg`, projDataObj.image);
   return (
     <>
-      {/* have a main image? 
-      onClick opens a new tab 
-      takes to live site, or 
-      takes to GitHub if cannot be live */}
       {/* <Container> */}
       <Row key={idx}>
         <Col idx={idx}>
@@ -44,21 +20,24 @@ const Project = ({ projDataObj, idx }) => {
                 rel="noopener noreferrer"
               >
                 {/* Check Out Live Project */}
-                <ImgProj src={projPic} alt="Proj Main Screenshot"></ImgProj>
+                {/* <ImgProj src={projPic} alt="Proj Main Screenshot"></ImgProj> */}
+                <ImgProj
+                  src={projDataObj.image}
+                  alt="Proj Main Screenshot"
+                ></ImgProj>
               </a>
-              <Tooltip>Click for Live Project</Tooltip>
+              {/* <Tooltip>Click for Live Project</Tooltip> */}
             </>
           )}
 
           {/* image to click to */}
-          {/* <p> */}
           <a
             className="App-link"
             href={projDataObj.links.repo}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Source Code on GitHub
+            Source Code TOTORO on GitHub
           </a>
 
           {/* <a
@@ -66,8 +45,7 @@ const Project = ({ projDataObj, idx }) => {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >click ...</a> */}
-          {/* </p> */}
+          >click ...</a> */}
         </Col>
 
         <Col>

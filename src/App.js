@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import PortfolioUI from "./components/PortfolioUI";
 import { GlobalStyle } from "./components/StyledGlobal";
-import About from "./components/About";
 import NavHeader from "./components/Header";
+import PortfolioUI from "./components/PortfolioUI";
+import About from "./components/About";
 
 import SocialMediaIconList from "./components/SocialMediaIconList";
 
@@ -14,14 +14,15 @@ function App() {
     {/* <div className="App"> */}
       <GlobalStyle darkMode />
 
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
       <NavHeader />
 
-      <PortfolioUI />
+      <PortfolioUI />  {/* ProjectSection */}
       {/* <hr /> */}
       <About />
 
       <SocialMediaIconList />
+
+
     </div>
   );
 }

@@ -9,9 +9,9 @@ const SocialMediaIconList = () => {
       <AnimatedSocialIcon
         brandName="github"
         url="https://github.com/geeeedev"
-        // defaultColor="#b6c3d9"  //orig
-        defaultColor="#6A737D"  
-        hoverColor="#15202B"
+        defaultColor="#b6c3d9"  //orig
+        // hoverColor="#15202B"
+        hoverColor="#223344"
         animation="grow"
         animationDuration={1}
         width="2em"

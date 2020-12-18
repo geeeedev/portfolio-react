@@ -2,59 +2,50 @@ import React from "react";
 import {
   Row,
   Col,
-  ImgProj,
-  DescProj,
-  RepoButton,
+  Img,
+  A,
+  Desc,
   Hr,
-  TechProj,
+  Tech,
   TechDtl,
   TechHeader,
+  RepoButton,
   Tooltip,
 } from "./StyledProject";
 import projPic from "../img/Freeze-or-Spoil_35Port.png";
 
 const Project = ({ projDataObj, idx }) => {
   console.log(`CurrImg`, projDataObj.image);
+
   return (
     <>
       <Row key={idx}>
         <Col idx={idx}>
           {/* Click for Live Proj or GitHub Repo Instead */}
           {projDataObj.links.site ? (
-            <a
-              href={projDataObj.links.site}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <ImgProj src={projPic} alt="Proj Main Screenshot" />
-              {/* <ImgProj
-                  src={projDataObj.image}
-                  alt="Proj Main Screenshot" /> */}
-            </a>
+            <A href={projDataObj.links.site}>
+              <Img src={projPic} />
+              {/* <Img src={projDataObj.image} /> */}
+            </A>
           ) : (
-            <a
-              href={projDataObj.links.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <ImgProj src={projPic} alt="Proj Main Screenshot" />
-              {/* <ImgProj
-                  src={projDataObj.image}
-                  alt="Proj Main Screenshot" /> */}
-            </a>
+            <A href={projDataObj.links.repo}>
+              <Img src={projPic} />
+              {/* <Img src={projDataObj.image} /> */}
+            </A>
           )}
         </Col>
 
         <Col>
-           <DescProj>  {/* Detail */}
+          <Desc>
             {/* <span>{idx}</span> */}
-            <h3>
-              {projDataObj.name} {projDataObj.status && (`~ ${projDataObj.status}`)}
-            </h3>
+            <h2>
+              {projDataObj.name}{" "}
+              {projDataObj.status && `~ ${projDataObj.status}`}
+            </h2>
             <Hr />
             <h4>{projDataObj.description}</h4>
-            
-            <TechProj> {/* TechDtl */}
+
+            <Tech>
               {projDataObj.frontendAry && (
                 <TechDtl>
                   <TechHeader>Frontend: </TechHeader>
@@ -73,7 +64,7 @@ const Project = ({ projDataObj, idx }) => {
                 </TechDtl>
               )}
 
-              {/* {projDataObj.database && (
+              {/* {projDataObj.database && ( //not needed for now
                 <TechDtl>
                   <TechHeader>Database: </TechHeader>
                   <div>{projDataObj.database} </div>
@@ -86,20 +77,15 @@ const Project = ({ projDataObj, idx }) => {
                   <div>{projDataObj.deployment} </div>
                 </TechDtl>
               )}
-            </TechProj>
+            </Tech>
 
             {/* GitHub Click */}
             {projDataObj.links.repo && (
-              <RepoButton
-                className="App-link"
-                href={projDataObj.links.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <RepoButton as="a" href={projDataObj.links.repo}>
                 View Source Code
               </RepoButton>
             )}
-          </DescProj>
+          </Desc>
         </Col>
       </Row>
     </>

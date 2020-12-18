@@ -10,7 +10,6 @@ export const Row = styled.div`
   justify-content: ${({ justify }) => justify || "space-evenly"};
   align-items: center;
 
-  //transition and delay here
   // outline: 1px solid blue; //////////// Row - blue
 `;
 
@@ -27,19 +26,28 @@ export const Col = styled.div`
   // outline: 1px dashed green; //////////// Col - green dash
 `;
 
-export const Img = styled.img`  //ImgProj
+export const Img = styled.img.attrs(() => ({
+  alt: "Project Screenshot",
+}))`
   width: 100%;
   height: 80%;
+  transition: transform 0.5s linear;
 
   &:hover {
-    opacity: 0.5;
+    // opacity: 0.5;
+    transform: scale(1.1);
   }
 
   //position: relative;
   // tooltip: "click for live project";
 `;
 
-export const Desc = styled.div`   ///DescProj
+export const A = styled.a.attrs(() => ({
+  target: "_blank",
+  rel: "noopener noreferrer",
+}))``;
+
+export const Desc = styled.div`
   padding: 5%;
   width: 100%;
   height: 100%;
@@ -65,7 +73,7 @@ export const Hr = styled.hr`
   opacity: 0.5;
 `;
 
-export const Tech = styled.div`  //TechProj
+export const Tech = styled.div`
   display: flex;
   justify-content: center;
 
@@ -80,15 +88,19 @@ export const TechDtl = styled.div`
 `;
 
 export const TechHeader = styled.h5`
-  border-bottom: 1px  #61dafb;
+  border-bottom: 1px #61dafb;
   font-weight: bold;
   // font-style: italic;
 `;
 
-export const RepoButton = styled.button`
+export const RepoButton = styled.button.attrs(() => ({
+  target: "_blank",
+  rel: "noopener noreferrer",
+}))`
   margin: 20px;
   padding: 0.25em 1em;
-  color: #61dafb;
+  color: #61dafb !important; //override bootstrap setting
+  text-decoration: none !important; //override bootstrap setting
   border: 2px solid #61dafb;
   border-radius: 5px;
   background: transparent;

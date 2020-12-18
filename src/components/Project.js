@@ -1,5 +1,16 @@
 import React from "react";
-import { Row, Col, ImgProj, DescProj, Tooltip } from "./StyledProject";
+import {
+  Row,
+  Col,
+  ImgProj,
+  DescProj,
+  RepoButton,
+  Hr,
+  TechProj,
+  TechDtl,
+  TechHeader,
+  Tooltip,
+} from "./StyledProject";
 import projPic from "../img/Freeze-or-Spoil_35Port.png";
 
 const Project = ({ projDataObj, idx }) => {
@@ -11,7 +22,6 @@ const Project = ({ projDataObj, idx }) => {
           {/* Click for Live Proj or GitHub Repo Instead */}
           {projDataObj.links.site ? (
             <a
-              className="App-link"
               href={projDataObj.links.site}
               target="_blank"
               rel="noopener noreferrer"
@@ -23,7 +33,6 @@ const Project = ({ projDataObj, idx }) => {
             </a>
           ) : (
             <a
-              className="App-link"
               href={projDataObj.links.repo}
               target="_blank"
               rel="noopener noreferrer"
@@ -36,58 +45,59 @@ const Project = ({ projDataObj, idx }) => {
           )}
         </Col>
 
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          >click ...</a> */}
-
         <Col>
-          <DescProj>
-            <h1>{idx}</h1>
-            <h3>{projDataObj.name}</h3>
+           <DescProj>  {/* Detail */}
+            {/* <span>{idx}</span> */}
+            <h3>
+              {projDataObj.name} {projDataObj.status && (`~ ${projDataObj.status}`)}
+            </h3>
+            <Hr />
             <h4>{projDataObj.description}</h4>
-            <p>{projDataObj.status}</p>
-            <ul>
-              <h5>Frontend: </h5>
-              {projDataObj.frontendAry.map((each) => (
-                <li>{each}</li>
-              ))}
-            </ul>
-            <ul>
-              {projDataObj.backend ? <h5>Backend: </h5> : ""}
-              {projDataObj.backend
-                ? projDataObj.backend.map((each) => <li>{each}</li>)
-                : ""}
-            </ul>
-            <ul>
-              {projDataObj.database ? (
-                <>
-                  <h5>Database: </h5> <p>{projDataObj.database} </p>
-                </>
-              ) : (
-                ""
+            
+            <TechProj> {/* TechDtl */}
+              {projDataObj.frontendAry && (
+                <TechDtl>
+                  <TechHeader>Frontend: </TechHeader>
+                  {projDataObj.frontendAry.map((each) => (
+                    <div>{each}</div>
+                  ))}
+                </TechDtl>
               )}
-            </ul>
-            <ul>
+
+              {projDataObj.backend && (
+                <TechDtl>
+                  <TechHeader>Backend: </TechHeader>
+                  {projDataObj.backend.map((each) => (
+                    <div>{each}</div>
+                  ))}
+                </TechDtl>
+              )}
+
+              {/* {projDataObj.database && (
+                <TechDtl>
+                  <TechHeader>Database: </TechHeader>
+                  <div>{projDataObj.database} </div>
+                </TechDtl>
+              )} */}
+
               {projDataObj.deployment && (
-                <>
-                  <h5>Deployment: </h5> <p>{projDataObj.deployment} </p>
-                </>
+                <TechDtl>
+                  <TechHeader>Deployment: </TechHeader>
+                  <div>{projDataObj.deployment} </div>
+                </TechDtl>
               )}
-            </ul>
+            </TechProj>
 
             {/* GitHub Click */}
             {projDataObj.links.repo && (
-              <a
+              <RepoButton
                 className="App-link"
                 href={projDataObj.links.repo}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Source Code TOTORO on GitHub
-              </a>
+                View Source Code
+              </RepoButton>
             )}
           </DescProj>
         </Col>

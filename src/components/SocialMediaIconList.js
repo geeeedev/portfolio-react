@@ -1,6 +1,6 @@
 import React from "react";
 import { AnimatedSocialIcon } from "react-animated-social-icons";
-import { SocialMediaIcons } from "./StyledSocialMediaIcon";
+import { SocialMediaIcons, CopyRight } from "./StyledSocialMediaIcon";
 
 const SocialMediaIconList = () => {
   return (
@@ -43,7 +43,7 @@ const SocialMediaIconList = () => {
       />
       
     </SocialMediaIcons>
-    <p>&copy; YYYY Gwennie Lau</p>
+    <CopyRight>&copy; YYYY Gwennie Lau</CopyRight>
     </>
   );
 };

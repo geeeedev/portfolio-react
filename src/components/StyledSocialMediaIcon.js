@@ -8,6 +8,11 @@ export const SocialMediaIcons = styled.div`
   height: 50px;
   width: auto;
 
+  // outline: 3px dashed orange;
+`;
 
-  outline: 3px dashed orange;
+export const CopyRight = styled.p`
+  text-align: center;
+
+  // outline: 3px dashed orange;
 `;

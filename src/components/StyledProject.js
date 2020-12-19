@@ -1,5 +1,17 @@
 // import { propTypes } from "react-bootstrap/esm/Image";
+import { keyframes } from "@emotion/react";
 import styled from "styled-components";
+
+export const slowEmerge = keyframes`
+  from {
+    // transform: translateY(0px);
+    top: 900px;
+  }
+  to {
+    // transform: translateY(-30px);
+    top: 300px;
+  }
+`;
 
 // per project
 export const Row = styled.div`
@@ -10,6 +22,8 @@ export const Row = styled.div`
   justify-content: ${({ justify }) => justify || "space-evenly"};
   align-items: center;
 
+  animation: $(slowEmerge) 2s linear 3s 1 normal;
+
   // outline: 1px solid blue; //////////// Row - blue
 `;
 
@@ -19,8 +33,6 @@ export const Col = styled.div`
   order: ${({ idx }) => (idx % 2 === 0 ? "2" : "1")};
 
   // &:hover {background-color: olive;} ///////////// Test
-  // display: flex;
-  // align-items: center;
   //position: relative;
   // z-index: -1;  //canNOT use -1, -1 kills onClick
   // outline: 1px dashed green; //////////// Col - green dash
@@ -34,8 +46,8 @@ export const Img = styled.img.attrs(() => ({
   transition: transform 0.5s linear;
 
   &:hover {
-    // opacity: 0.5;
     transform: scale(1.1);
+    // opacity: 0.5;
   }
 
   //position: relative;

@@ -10,7 +10,7 @@ import SocialMediaIconList from "./components/SocialMediaIconList";
 
 function App() {
   return (
-    <div >
+    <>
     {/* <div className="App"> */}
       <GlobalStyle darkMode />
 
@@ -18,12 +18,12 @@ function App() {
 
       <PortfolioUI />  {/* ProjectSection */}
       {/* <hr /> */}
-      <About />
+      {/* <About /> */}
 
       <SocialMediaIconList />
 
 
-    </div>
+    </>
   );
 }
 

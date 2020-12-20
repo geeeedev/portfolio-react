@@ -16,7 +16,8 @@ export const GlobalStyle = createGlobalStyle`
           props.darkMode ? colorRhino: "whitesmoke" };
         color: ${(props) =>
             props.darkMode ? "whitesmoke": colorRhino };
-        outline: 1px solid green;
+        
+            // outline: 1px solid green;
     }
 `;
 

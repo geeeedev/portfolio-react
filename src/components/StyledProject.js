@@ -1,31 +1,57 @@
 // import { propTypes } from "react-bootstrap/esm/Image";
-import { keyframes } from "@emotion/react";
+import { keyframes } from "styled-components";
 import styled from "styled-components";
+// npm i react-animations
+import { fadeInUp } from 'react-animations';
 
-export const slowEmerge = keyframes`
-  from {
-    // transform: translateY(0px);
-    top: 900px;
+
+
+// const rotate = keyframes`
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// `;
+
+// export const RotateDiv = styled.div`
+//   display: inline-block;
+//   animation: ${rotate} 2s linear 3;
+//   padding: 2rem 1rem;
+//   font-size: 1.2rem;
+// `;
+
+const slowEmerge = keyframes`
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
   }
-  to {
-    // transform: translateY(-30px);
-    top: 300px;
+  100% {
+    transform: translateY(-100px);
+    opacity: 1;
   }
 `;
+
 
 // per project
 export const Row = styled.div`
   padding: 0 8%;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   // justify-content: ${(props) => props.justify};  //N/A
   justify-content: ${({ justify }) => justify || "space-evenly"};
   align-items: center;
-
-  animation: $(slowEmerge) 2s linear 3s 1 normal;
+  // animation-name: ${slowEmerge};
+  animation-name: 3s ${keyframes`${fadeInUp}`} 1;
+  // animation-duration: 3s;
+  // animation-style: linear;
+  // animation-delay: 3s;
+  // animation-iteration-count: 1;
 
   // outline: 1px solid blue; //////////// Row - blue
 `;
+
 
 // per project item: img vs. desc
 export const Col = styled.div`

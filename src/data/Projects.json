@@ -2,7 +2,7 @@
 [
     {   
         "name": "The Shopping List App",
-        "description":"A shopping list Single Page App in React with Styled Component",
+        "description":"A shopping list single page app in React with Styled Component",
         "status": "Live",
         "category": ["Utility","Shopping"],
         "date":"Dec 2020",
@@ -19,7 +19,7 @@
     },
     {   
         "name": "Freeze-Or-Spoil",
-        "description":"A freezer food storage tracking Single Page App in MERN",
+        "description":"A freezer food storage tracking single page app in MERN",
         "status": "Repo",
         "category": ["Utility","Kitchen"],
         "date":"(MMMYYYY)",

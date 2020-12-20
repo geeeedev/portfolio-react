@@ -11,14 +11,20 @@ import {
   TechHeader,
   RepoButton,
   Tooltip,
+  // RotateDiv
 } from "./StyledProject";
 import projPic from "../img/Freeze-or-Spoil_35Port.png";
+// npm i react-animate-on-scroll
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const Project = ({ projDataObj, idx }) => {
   console.log(`CurrImg`, projDataObj.image);
 
   return (
     <>
+    {/* <RotateDiv> &lt; 💅🏾 &gt; </RotateDiv> */}
+    <ScrollAnimation animateIn="fadeInUp" duration={3} delay={2} animateOnce={true}>
       <Row key={idx}>
         <Col idx={idx}>
           {/* Click for Live Proj or GitHub Repo Instead */}
@@ -88,6 +94,7 @@ const Project = ({ projDataObj, idx }) => {
           </Desc>
         </Col>
       </Row>
+      </ScrollAnimation>
     </>
   );
 };

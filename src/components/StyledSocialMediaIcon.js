@@ -6,13 +6,13 @@ export const SocialMediaIcons = styled.div`
   align-items: center;      //vertical align
   justify-content: center;  //horizontal align
   height: 50px;
-  width: auto;
 
-  // outline: 3px dashed orange;
+  // outline: 1px dashed orange;
 `;
 
 export const CopyRight = styled.p`
+  margin: 20px;
   text-align: center;
 
-  // outline: 3px dashed orange;
+  // outline: 1px dashed pink;
 `;

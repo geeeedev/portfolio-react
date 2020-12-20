@@ -1,5 +1,9 @@
 import styled from "styled-components";
+// import { keyframes } from "styled-components";
+// npm i react-animations
+// import { fadeInUp } from "react-animations";
 
+// animation: 3s ${keyframes`${fadeInUp}`} ;
 export const Img = styled.img`
   width: 100vw;
   height: 60vh;
@@ -18,12 +22,14 @@ export const HambgBar = styled.img`
   // outline: 2px dotted yellow;
 `;
 
+// animation: 3s ${keyframes`${fadeInUp}`} ;
 export const Header = styled.header`
+  // margin: 0px;
+  padding-right: 15px;
   background-color: #282c34;
   background-color: #303137;
+  width: 100vw;
   height: 3.5vh;
-  padding-right: 15px;
-  margin: 0px;
   color: #7d6c53;
   font-size: calc(10px + 2vmin);
   display: flex;
@@ -40,7 +46,7 @@ export const Header = styled.header`
   }
   z-index: 10;
 
-//   outline: 2px dotted red;
+  // outline: 2px dotted red;
 `;
 
 export const NavLink = styled.a`
@@ -82,5 +88,3 @@ export const NavLink = styled.a`
 //      color: #282c34;
 //      font-weight: 900;
 // }
-
-

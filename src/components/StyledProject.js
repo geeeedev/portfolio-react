@@ -1,10 +1,5 @@
-// import { propTypes } from "react-bootstrap/esm/Image";
-import { keyframes } from "styled-components";
 import styled from "styled-components";
-// npm i react-animations
-import { fadeInUp } from 'react-animations';
-
-
+import { keyframes } from "styled-components";
 
 // const rotate = keyframes`
 //   from {
@@ -22,18 +17,18 @@ import { fadeInUp } from 'react-animations';
 //   font-size: 1.2rem;
 // `;
 
-const slowEmerge = keyframes`
-  0% {
-    transform: translateY(0px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(-100px);
-    opacity: 1;
-  }
-`;
+// const slowEmerge = keyframes`
+//   0% {
+//     transform: translateY(0px);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateY(-100px);
+//     opacity: 1;
+//   }
+// `;
 
-
+// animation-name: ${slowEmerge};
 // per project
 export const Row = styled.div`
   padding: 0 8%;
@@ -42,8 +37,7 @@ export const Row = styled.div`
   // justify-content: ${(props) => props.justify};  //N/A
   justify-content: ${({ justify }) => justify || "space-evenly"};
   align-items: center;
-  // animation-name: ${slowEmerge};
-  animation-name: 3s ${keyframes`${fadeInUp}`} 1;
+
   // animation-duration: 3s;
   // animation-style: linear;
   // animation-delay: 3s;
@@ -51,7 +45,6 @@ export const Row = styled.div`
 
   // outline: 1px solid blue; //////////// Row - blue
 `;
-
 
 // per project item: img vs. desc
 export const Col = styled.div`
@@ -72,8 +65,8 @@ export const Img = styled.img.attrs(() => ({
   transition: transform 0.5s linear;
 
   &:hover {
-    transform: scale(1.1);
-    // opacity: 0.5;
+    // transform: scale(1.1);
+    opacity: 0.5;
   }
 
   //position: relative;

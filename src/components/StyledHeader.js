@@ -24,11 +24,11 @@ export const HambgBar = styled.img`
 
 // animation: 3s ${keyframes`${fadeInUp}`} ;
 export const Header = styled.header`
-  // margin: 0px;
+  margin: 0px;
   padding-right: 15px;
   background-color: #282c34;
   background-color: #303137;
-  width: 100vw;
+  // width: 100vw;
   height: 3.5vh;
   color: #7d6c53;
   font-size: calc(10px + 2vmin);

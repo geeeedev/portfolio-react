@@ -67,5 +67,22 @@
             "site":""
         },
         "image":"https://i.redd.it/ko8rxxqv1yty.jpg"
+    },
+    {   
+        "name": "Phantom Buy",
+        "description":"A grocery list app in Python3 and Django",
+        "status": "Repo",
+        "category": ["Utility","Shopping"],
+        "date":"April 2020",
+        "frontendAry":["Bootstrap","RESTful routing"],
+        "frontendStr":"Bootstrap,",
+        "backend":["MTV","Django ORM","SQLite"],
+        "database":"SQLite",
+        "deployment":"AWS EC2",
+        "links":{
+            "repo":"https://github.com/geeeedev/PhantomBuy",
+            "site":""
+        },
+        "image":"https://i.redd.it/ko8rxxqv1yty.jpg"
     }
 ]

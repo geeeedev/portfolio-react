@@ -29,6 +29,10 @@ import { keyframes } from "styled-components";
 // `;
 
 // animation-name: ${slowEmerge};
+// animation-duration: 3s;
+// animation-style: linear;
+// animation-delay: 3s;
+// animation-iteration-count: 1;
 // per project
 export const Row = styled.div`
   padding: 0 8%;
@@ -37,11 +41,6 @@ export const Row = styled.div`
   // justify-content: ${(props) => props.justify};  //N/A
   justify-content: ${({ justify }) => justify || "space-evenly"};
   align-items: center;
-
-  // animation-duration: 3s;
-  // animation-style: linear;
-  // animation-delay: 3s;
-  // animation-iteration-count: 1;
 
   // outline: 1px solid blue; //////////// Row - blue
 `;

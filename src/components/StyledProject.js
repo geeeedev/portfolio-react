@@ -61,11 +61,12 @@ export const Img = styled.img.attrs(() => ({
 }))`
   width: 100%;
   height: 80%;
-  transition: transform 0.5s linear;
+  // transition: transform 0.5s linear;
 
   &:hover {
-    // transform: scale(1.1);
-    opacity: 0.5;
+    // opacity: 0.5;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 4px lightblue;
   }
 
   //position: relative;

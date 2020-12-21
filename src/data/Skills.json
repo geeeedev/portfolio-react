@@ -1,11 +1,13 @@
 {
     "frontend":[
         "React",
+        "Styled-Component",
+        "Material-UI",
+        "Material Table",
+        "React Bootstrap",
         "jQuery",
         "JavaScript/ES6+",
         "Razor",
-        "Material-UI",
-        "Material Table",
         "JSX",
         "JSS",
         "Boostrap",
@@ -14,7 +16,7 @@
         "HTML5",
         "DOM"
     ],
-    "frontend-UPCOMING":["React","[Redux]","[Vue]","jQuery","JavaScript/ES6+","Razor","Material-UI","Material Table","JSX","JSS","Boostrap","CSS3","AJAX","HTML5","DOM"],
+    "frontend-UPCOMING":["React","[Redux]","[Vue]","Styled-Component","Material-UI","Material Table","React Bootstrap","jQuery","JavaScript/ES6+","Razor","JSX","JSS","Boostrap","CSS3","AJAX","HTML5","DOM"],
     "backend":[
         "Node",
         "Express",

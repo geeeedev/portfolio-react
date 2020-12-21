@@ -7,7 +7,7 @@
         "category": ["Utility","Shopping"],
         "date":"Dec 2020",
         "frontendAry":["React","Styled Component"],
-        "frontendStr":"React, Styled Component",
+        "frontendStr":"React,Styled Component",
         "backend":null,
         "database":"",
         "deployment":"GitHub Pages",
@@ -22,34 +22,17 @@
         "description":"A freezer food storage tracking single page app in MERN",
         "status": "Repo",
         "category": ["Utility","Kitchen"],
-        "date":"(MMMYYYY)",
+        "date":"July 2020",
         "frontendAry":["React","Material UI","Material Table","Axios","Reach/Route","Moment"],
-        "frontendStr":"React, Material UI, Material Table, Axios, Reach/Route, Moment",
+        "frontendStr":"React,Material UI,Material Table,Axios,Reach/Route,Moment",
         "backend":["Node","Express","Mongoose","MongoDB"],
         "database":"MongoDB",
         "deployment":"AWS EC2",
         "links":{
             "repo":"https://github.com/geeeedev/Freeze-Or-Spoil",
-            "site":"https://github.com/geeeedev/Freeze-Or-Spoil"
+            "site":""
         },
         "image":"https://s3.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/HobbyHub2.png"
-        
-    },
-    {   
-        "name": "Example3",
-        "description":"Description Description Description",
-        "status": "",
-        "category": ["","",""],
-        "date":"(MMMYYYY)",
-        "frontendAry":["React","Material UI","Material Table","Axios","Reach/Route","Moment"],
-        "frontendStr":"...depends on how I code/use this - React, Material UI, Material Table, Axios, Reach/Route, Moment",
-        "backend":["Node","Express","Mongoose","MongoDB"],
-        "database":"MongoDB",
-        "deployment":"AWS EC2",
-        "links":{
-            "repo":"https://github.com/geeeedev/....",
-            "site":"https://i.redd.it/ko8rxxqv1yty.jpg"
-        },
-        "image":"https://i.redd.it/ko8rxxqv1yty.jpg"
     }
+    
 ]

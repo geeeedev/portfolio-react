@@ -78,61 +78,6 @@ export const A = styled.a.attrs(() => ({
   rel: "noopener noreferrer",
 }))``;
 
-//////////////////////////////////////////////////////////////////////////////////
-export const Desc = styled.div`
-  padding: 5%;
-  width: 100%;
-  height: 100%;
-
-  // outline: 1px dotted pink;
-`;
-
-export const ProjDesc = styled(Desc)`
-  // text-align: center;
-  text-align: ${({ idx }) => idx % 2 === 0 ? "right" : "left"};
-
-  //could adjust left/right based on where img is???
-`;
-
-// export const Tooltip = styled.span`
-//   visibility: hidden;
-//   color: red;
-//   text-align: center;
-//   position: absolute;
-//   z-index: 2;
-
-//   ${ImgProj}:hover & {
-//     visibility: visible;
-//   }
-// `;
-
-export const Hr = styled.hr`
-  border-top: 3px ridge #61dafb;
-  opacity: 0.5;
-`;
-
-export const Tech = styled.div`
-  display: flex;
-  justify-content: center;
-  // text-align: center;
-
-  // outline: 1px dotted yellow;
-`;
-
-export const TechDtl = styled.ul`
-  margin: 20px;
-  padding: 20px 15px;
-
-  // outline: 1px dotted orange;
-`;
-
-export const TechHeader = styled.h4`
-  border-bottom: 1px #61dafb;
-  font-weight: bold;
-  // font-style: italic;
-`;
-
-//////////////////////////////////////////////////////////////////////////////////
 
 export const RepoButton = styled.button.attrs(() => ({
   target: "_blank",
@@ -149,4 +94,18 @@ export const RepoButton = styled.button.attrs(() => ({
     font-weight: 900;
     box-shadow: 0px 0px 4px lightblue;
   }
+
+  // outline: 1px solid lime;
 `;
+
+// export const Tooltip = styled.span`
+//   visibility: hidden;
+//   color: red;
+//   text-align: center;
+//   position: absolute;
+//   z-index: 2;
+
+//   ${ImgProj}:hover & {
+//     visibility: visible;
+//   }
+// `;

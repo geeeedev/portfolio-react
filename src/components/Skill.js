@@ -1,38 +1,39 @@
 import React from "react";
 import skillDataObj from "../data/Skills.json";
-import { Desc, Hr, Tech, TechDtl, TechHeader } from "./StyledProject";
+import { DescSkill, Hr, Tech, TechDtlSkill, TechHeader } from "./StyledTech";
 
 // const Skill = ({ skillDataObj }) => {
 const Skill = () => {
   return (
-    <Desc>
+    <DescSkill>
       <h2>Skills</h2>
+      <Hr />
       <Tech>
-        <TechDtl>  {/* ul */} 
+        <TechDtlSkill>  {/* ul */} 
           <TechHeader>Frontend:</TechHeader>
           {skillDataObj.frontend.map((each) => (
             <div>{each}</div>
           ))}
-        </TechDtl>
-        <TechDtl>
+        </TechDtlSkill>
+        <TechDtlSkill>
           <TechHeader>Backend:</TechHeader>
           {skillDataObj.backend.map((each) => (
             <div>{each}</div>
           ))}
-        </TechDtl>
-        <TechDtl>
+        </TechDtlSkill>
+        <TechDtlSkill>
           <TechHeader>Framework:</TechHeader>
           {skillDataObj.framework.map((each) => (
             <div>{each}</div>
           ))}
-        </TechDtl>
-        <TechDtl>
+        </TechDtlSkill>
+        <TechDtlSkill>
           <TechHeader>Database:</TechHeader>
           {skillDataObj.database.map((each) => (
             <div>{each}</div>
           ))}
-        </TechDtl>
-        <TechDtl>
+        </TechDtlSkill>
+        <TechDtlSkill>
           <TechHeader>Tool:</TechHeader>
           <h5>Deployment:</h5>
           {skillDataObj.tool.deployment.map((each) => (
@@ -45,22 +46,22 @@ const Skill = () => {
           {skillDataObj.tool.others.map((each) => (
             <div>{each}</div>
           ))}
-        </TechDtl>
-        {/* <TechDtl>
+        </TechDtlSkill>
+        {/* <TechDtlSkill>
           <TechHeader>Deployment:</TechHeader>
           {skillDataObj.deployment.map((each) => (
             <div>{each}</div>
           ))}
-        </TechDtl>
+        </TechDtlSkill>
         
-        <TechDtl>
+        <TechDtlSkill>
           <TechHeader>Version Control:</TechHeader>
           {skillDataObj.versionControl.map((each) => (
             <div>{each}</div>
           ))}
-        </TechDtl> */}
+        </TechDtlSkill> */}
       </Tech>
-    </Desc>
+    </DescSkill>
   );
 };
 

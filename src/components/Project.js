@@ -26,7 +26,7 @@ const Project = ({ projDataObj, idx }) => {
         animateIn="fadeInUp"
         duration={3}
         delay={1000}
-        animateOnce={true}
+        // animateOnce={true}
       >
         <Row key={idx}>
           <Col idx={idx}>

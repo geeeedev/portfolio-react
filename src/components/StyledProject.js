@@ -35,7 +35,7 @@ import { keyframes } from "styled-components";
 // animation-iteration-count: 1;
 // per project
 export const Row = styled.div`
-  padding: 0 8%;
+  padding: 3% 8%;
   display: inline-flex;
   flex-wrap: wrap;
   // justify-content: ${(props) => props.justify};  //N/A
@@ -61,12 +61,12 @@ export const Img = styled.img.attrs(() => ({
 }))`
   width: 100%;
   height: 80%;
-  // transition: transform 0.5s linear;
+  transition: transform 0.5s linear;
 
   &:hover {
     // opacity: 0.5;
     transform: scale(1.05);
-    box-shadow: 0px 0px 4px lightblue;
+    box-shadow: 0px 0px 6px lightblue;
   }
 
   //position: relative;
@@ -78,13 +78,20 @@ export const A = styled.a.attrs(() => ({
   rel: "noopener noreferrer",
 }))``;
 
+//////////////////////////////////////////////////////////////////////////////////
 export const Desc = styled.div`
   padding: 5%;
   width: 100%;
   height: 100%;
-  text-align: center; //could adjust left/right based on where img is???
 
   // outline: 1px dotted pink;
+`;
+
+export const ProjDesc = styled(Desc)`
+  // text-align: center;
+  text-align: ${({ idx }) => idx % 2 === 0 ? "right" : "left"};
+
+  //could adjust left/right based on where img is???
 `;
 
 // export const Tooltip = styled.span`
@@ -107,22 +114,26 @@ export const Hr = styled.hr`
 export const Tech = styled.div`
   display: flex;
   justify-content: center;
+  // justify-content: ${({ idx }) => idx % 2 === 0 ? "flex-end" : "flex-start"};
+  text-align: center;
 
   // outline: 1px dotted yellow;
 `;
 
-export const TechDtl = styled.div`
+export const TechDtl = styled.ul`
   margin: 20px;
   padding: 20px 15px;
 
   // outline: 1px dotted orange;
 `;
 
-export const TechHeader = styled.h5`
+export const TechHeader = styled.h4`
   border-bottom: 1px #61dafb;
   font-weight: bold;
   // font-style: italic;
 `;
+
+//////////////////////////////////////////////////////////////////////////////////
 
 export const RepoButton = styled.button.attrs(() => ({
   target: "_blank",

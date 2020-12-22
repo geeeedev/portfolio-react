@@ -4,7 +4,7 @@ import {
   Col,
   Img,
   A,
-  Desc,
+  ProjDesc,
   Hr,
   Tech,
   TechDtl,
@@ -17,8 +17,7 @@ import projPic from "../img/Freeze-or-Spoil_35Port.png";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Project = ({ projDataObj, idx }) => {
-  console.log(`CurrImg`, projDataObj.image);
-
+  // console.log(`CurrImg`, projDataObj.image);
   return (
     <>
       {/* <RotateDiv> &lt; 💅🏾 &gt; </RotateDiv> */}
@@ -26,7 +25,7 @@ const Project = ({ projDataObj, idx }) => {
         animateIn="fadeInUp"
         duration={3}
         delay={1000}
-        // animateOnce={true}
+        animateOnce={true}
       >
         <Row key={idx}>
           <Col idx={idx}>
@@ -45,16 +44,16 @@ const Project = ({ projDataObj, idx }) => {
           </Col>
 
           <Col>
-            <Desc>
+            <ProjDesc idx={idx}>
               {/* <span>{idx}</span> */}
               <h2>
                 {projDataObj.name}{" "}
-                {projDataObj.status && `~ ${projDataObj.status}`}
+                {/* {projDataObj.status && `~ ${projDataObj.status}`} */}
               </h2>
               <Hr />
               <h4>{projDataObj.description}</h4>
 
-              <Tech>
+              <Tech idx={idx}>
                 {projDataObj.frontendAry && (
                   <TechDtl>
                     <TechHeader>Frontend: </TechHeader>
@@ -94,7 +93,7 @@ const Project = ({ projDataObj, idx }) => {
                   View Source Code
                 </RepoButton>
               )}
-            </Desc>
+            </ProjDesc>
           </Col>
         </Row>
       </ScrollAnimation>

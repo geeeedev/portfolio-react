@@ -1,17 +1,6 @@
 import React from "react";
-import {
-  Row,
-  Col,
-  Img,
-  A,
-  ProjDesc,
-  Hr,
-  Tech,
-  TechDtl,
-  TechHeader,
-  RepoButton,
-  Tooltip,
-} from "./StyledProject";
+import { Row, Col, Img, A, RepoButton, Tooltip } from "./StyledProject";
+import { DescProj, Hr, Tech, TechDtlProj, TechHeader } from "./StyledTech";
 import projPic from "../img/Freeze-or-Spoil_35Port.png";
 // npm i react-animate-on-scroll
 import ScrollAnimation from "react-animate-on-scroll";
@@ -44,7 +33,7 @@ const Project = ({ projDataObj, idx }) => {
           </Col>
 
           <Col>
-            <ProjDesc idx={idx}>
+            <DescProj idx={idx}>
               {/* <span>{idx}</span> */}
               <h2>
                 {projDataObj.name}{" "}
@@ -55,35 +44,35 @@ const Project = ({ projDataObj, idx }) => {
 
               <Tech idx={idx}>
                 {projDataObj.frontendAry && (
-                  <TechDtl>
+                  <TechDtlProj>
                     <TechHeader>Frontend: </TechHeader>
                     {projDataObj.frontendAry.map((each) => (
                       <div>{each}</div>
                     ))}
-                  </TechDtl>
+                  </TechDtlProj>
                 )}
 
                 {projDataObj.backend && (
-                  <TechDtl>
+                  <TechDtlProj>
                     <TechHeader>Backend: </TechHeader>
                     {projDataObj.backend.map((each) => (
                       <div>{each}</div>
                     ))}
-                  </TechDtl>
+                  </TechDtlProj>
                 )}
 
                 {/* {projDataObj.database && ( //not needed for now
-                <TechDtl>
+                <TechDtlProj>
                   <TechHeader>Database: </TechHeader>
                   <div>{projDataObj.database} </div>
-                </TechDtl>
+                </TechDtlProj>
               )} */}
 
                 {projDataObj.deployment && (
-                  <TechDtl>
+                  <TechDtlProj>
                     <TechHeader>Deployment: </TechHeader>
                     <div>{projDataObj.deployment} </div>
-                  </TechDtl>
+                  </TechDtlProj>
                 )}
               </Tech>
 
@@ -93,7 +82,7 @@ const Project = ({ projDataObj, idx }) => {
                   View Source Code
                 </RepoButton>
               )}
-            </ProjDesc>
+            </DescProj>
           </Col>
         </Row>
       </ScrollAnimation>

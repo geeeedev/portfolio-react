@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const ProjContainer = styled.div`
-  padding: 80px 0px;
-  margin-bottom: 20px;
-  
+  padding: 4% 0%;
+  margin-bottom: 4%;
   
   // outline: 3px dotted purple;
 `;

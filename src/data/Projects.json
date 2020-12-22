@@ -2,7 +2,7 @@
 [
     {   
         "name": "The Shopping List App",
-        "description":"A shopping list single page app in React with Styled Component",
+        "description":"A shopping list single page app in React",
         "status": "Live",
         "category": ["Utility","Shopping"],
         "date":"Dec 2020",
@@ -53,7 +53,7 @@
     },
     {   
         "name": "Table For Who",
-        "description":"A restaurant wait-list app in C#.Net Core with MVC",
+        "description":"A restaurant wait-list app in C#.Net Core MVC",
         "status": "Repo",
         "category": ["Utility","Restaurant"],
         "date":"May 2020",
@@ -61,7 +61,7 @@
         "frontendStr":"Razor,Bootstrap,RESTful routing",
         "backend":["MVC","LINQ","Entity Framework Core","MySQL"],
         "database":"MySQL",
-        "deployment":"AWS EC2",
+        "deployment":"",
         "links":{
             "repo":"https://github.com/geeeedev/TableForWho",
             "site":""
@@ -70,7 +70,7 @@
     },
     {   
         "name": "Phantom Buy",
-        "description":"A grocery list CRUD app in Python3 and Django",
+        "description":"A grocery list CRUD app in Python3 Django",
         "status": "Repo",
         "category": ["Utility","Shopping"],
         "date":"April 2020",
@@ -78,7 +78,7 @@
         "frontendStr":"Bootstrap,RESTful routing",
         "backend":["MTV","Django ORM","SQLite"],
         "database":"SQLite",
-        "deployment":"AWS EC2",
+        "deployment":"",
         "links":{
             "repo":"https://github.com/geeeedev/PhantomBuy",
             "site":""
@@ -87,7 +87,7 @@
     },
     {   
         "name": "Adopt-A-Cat",
-        "description":"A cat adoption CRUD app in Python3 and Django",
+        "description":"A cat adoption CRUD app in Python3 Django",
         "status": "Repo",
         "category": ["Utility","Shopping"],
         "date":"March 2020",
@@ -95,7 +95,7 @@
         "frontendStr":"Bootstrap,RESTful routing",
         "backend":["MTV","Django ORM","SQLite"],
         "database":"SQLite",
-        "deployment":"AWS EC2",
+        "deployment":"",
         "links":{
             "repo":"https://github.com/geeeedev/Adopt-A-Cat",
             "site":""

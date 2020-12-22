@@ -114,8 +114,7 @@ export const Hr = styled.hr`
 export const Tech = styled.div`
   display: flex;
   justify-content: center;
-  // justify-content: ${({ idx }) => idx % 2 === 0 ? "flex-end" : "flex-start"};
-  text-align: center;
+  // text-align: center;
 
   // outline: 1px dotted yellow;
 `;

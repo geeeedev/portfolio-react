@@ -24,7 +24,7 @@ const githubTheme = {
 // const Skill = ({ skillDataObj }) => {
 const Skill = () => {
   return (
-    <DescSkill>
+    <DescSkill id="skill">
       <h2>Skills</h2>
       <Hr />
       <Tech>

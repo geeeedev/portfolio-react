@@ -20,7 +20,7 @@ const NavHeader = () => {
         <HambgBar src={NavHambg} alt="" />
         <NavLink href="#proj"> Projects </NavLink>
         <NavLink href="#skill"> Skills </NavLink>
-        <NavLink href="#about"> About </NavLink>
+        {/* <NavLink href="#about"> About </NavLink> */}
         <NavLink href="#contact"> Contact </NavLink>
         <NavLink href="#resume" onClick={() => setShowModal(true)}>
           Resume

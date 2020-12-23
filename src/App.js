@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 
 import { GlobalStyle } from "./components/StyledGlobal";
@@ -16,10 +16,9 @@ function App() {
       <GlobalStyle darkMode />
 
       <NavHeader />
-      <Skill />
 
       <PortfolioUI />  {/* ProjectSection */}
-      {/* <hr /> */}
+      <Skill />
 
       <SocialMediaIconList />
 

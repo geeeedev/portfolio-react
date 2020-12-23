@@ -1,6 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
-
-
+import { createGlobalStyle } from "styled-components";
 
 const colorRhino = "#3f4757";
 export const GlobalStyle = createGlobalStyle`
@@ -13,14 +11,12 @@ export const GlobalStyle = createGlobalStyle`
     body {
         // background-color: yellow;
         background-color: ${(props) =>
-          props.darkMode ? colorRhino: "whitesmoke" };
-        color: ${(props) =>
-            props.darkMode ? "whitesmoke": colorRhino };
+          props.darkMode ? colorRhino : "whitesmoke"};
+        color: ${(props) => (props.darkMode ? "whitesmoke" : colorRhino)};
         
             // outline: 1px solid green;
     }
 `;
-
 
 // export const Header = styled.header`  //Not Used?
 //     background-color: #282c34;

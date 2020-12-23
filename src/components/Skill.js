@@ -1,6 +1,25 @@
 import React from "react";
 import skillDataObj from "../data/Skills.json";
-import { DescSkill, Hr, Tech, TechDtlSkill, TechHeader } from "./StyledTech";
+import {
+  DescSkill,
+  Hr,
+  Tech,
+  TechDtlSkill,
+  Github,
+  TechHeader,
+} from "./StyledTech";
+import GitHubCalendar from "react-github-calendar";
+import ReactTooltip from "react-tooltip";
+
+const githubTheme = {
+  background: 'transparent',
+  text: '#fff',
+  grade4: 'hsl(203, 78%, 30%)',
+  grade3: 'hsl(203, 78%, 44%)',
+  grade2: 'hsl(203, 78%, 58%)',
+  grade1: 'hsl(203, 78%, 72%)',
+  grade0: '#888',
+};
 
 // const Skill = ({ skillDataObj }) => {
 const Skill = () => {
@@ -9,7 +28,9 @@ const Skill = () => {
       <h2>Skills</h2>
       <Hr />
       <Tech>
-        <TechDtlSkill>  {/* ul */} 
+        <TechDtlSkill>
+          {" "}
+          {/* ul */}
           <TechHeader>Frontend:</TechHeader>
           {skillDataObj.frontend.map((each) => (
             <div>{each}</div>
@@ -61,6 +82,19 @@ const Skill = () => {
           ))}
         </TechDtlSkill> */}
       </Tech>
+      <Github>
+        <GitHubCalendar
+          username="geeeedev"
+          theme={githubTheme}
+          blockSize={16}
+          blockMargin={3}
+          fontSize={16}
+          showTotalCount={false}
+          // fullYear={false}
+        >
+          <ReactTooltip delayShow={50} html />
+        </GitHubCalendar>
+      </Github>
     </DescSkill>
   );
 };

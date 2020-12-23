@@ -10,7 +10,7 @@ const PortfolioUI = () => {
   //This should really be ProjectSection or ProjectListing
   return (
     <>
-    <ProjContainer> 
+    <ProjContainer id="proj"> 
       {Projects.map((proj, idx) => (
         <Project projDataObj={proj} idx={idx}/>
       ))}

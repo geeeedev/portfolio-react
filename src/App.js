@@ -16,12 +16,9 @@ function App() {
       <GlobalStyle darkMode />
 
       <NavHeader />
-
       <PortfolioUI />  {/* ProjectSection */}
       <Skill />
-
       <SocialMediaIconList />
-
 
     </>
   );

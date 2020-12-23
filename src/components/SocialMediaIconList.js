@@ -6,7 +6,7 @@ const SocialMediaIconList = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <SocialMediaIcons>
+      <SocialMediaIcons id="contact">
         <AnimatedSocialIcon
           brandName="github"
           url="https://github.com/geeeedev"
@@ -42,8 +42,8 @@ const SocialMediaIconList = () => {
           style={{ padding: "3em" }}
           newPage={true}
         />
-      </SocialMediaIcons>
-      <CopyRight>&copy; {year} Gwennie Lau</CopyRight>
+      </SocialMediaIcons>    {/*  Footer1  */}
+      <CopyRight>&copy; {year} Gwennie Lau</CopyRight>   {/*  Footer2  */}
     </>
   );
 };

@@ -9,12 +9,12 @@ export const GlobalStyle = createGlobalStyle`
         // color: #d47b8ae1;
     }
     body {
-        // background-color: yellow;
         background-color: ${(props) =>
-          props.darkMode ? colorRhino : "whitesmoke"};
-        color: ${(props) => (props.darkMode ? "whitesmoke" : colorRhino)};
-        
-            // outline: 1px solid green;
+            props.darkMode ? colorRhino : "whitesmoke"};
+            color: ${(props) => (props.darkMode ? "whitesmoke" : colorRhino)};
+            
+        // background-color: yellow;
+        // outline: 1px solid green;
     }
 `;
 

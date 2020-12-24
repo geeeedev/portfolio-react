@@ -7,18 +7,19 @@ import {
   TechDtlSkill,
   Github,
   TechHeader,
+  TechHeaderSub,
 } from "./StyledTech";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
 
 const githubTheme = {
-  background: 'transparent',
-  text: '#fff',
-  grade4: 'hsl(203, 78%, 30%)',
-  grade3: 'hsl(203, 78%, 44%)',
-  grade2: 'hsl(203, 78%, 58%)',
-  grade1: 'hsl(203, 78%, 72%)',
-  grade0: '#888',
+  background: "transparent",
+  text: "#fff",
+  grade4: "hsl(203, 78%, 30%)",
+  grade3: "hsl(203, 78%, 44%)",
+  grade2: "hsl(203, 78%, 58%)",
+  grade1: "hsl(203, 78%, 72%)",
+  grade0: "#888",
 };
 
 // const Skill = ({ skillDataObj }) => {
@@ -56,15 +57,15 @@ const Skill = () => {
         </TechDtlSkill>
         <TechDtlSkill>
           <TechHeader>Tool:</TechHeader>
-          <h5>Deployment:</h5>
+          {skillDataObj.tool.others.map((each) => (
+            <div>{each}</div>
+          ))}
+          <TechHeaderSub>Deployment:</TechHeaderSub>
           {skillDataObj.tool.deployment.map((each) => (
             <div>{each}</div>
           ))}
-          <h5>Version Control:</h5>
+          <TechHeaderSub>Version Control:</TechHeaderSub>
           {skillDataObj.tool.versionControl.map((each) => (
-            <div>{each}</div>
-          ))}
-          {skillDataObj.tool.others.map((each) => (
             <div>{each}</div>
           ))}
         </TechDtlSkill>

@@ -13,15 +13,6 @@ export const Img = styled.img`
   // outline: 2px dotted yellow;
 `;
 
-export const HambgBar = styled.img`
-  width: auto;
-  height: 3.5vh;
-
-  // position: relative;    // N/A
-  // right: -20px;          // N/A
-  // outline: 2px dotted yellow;
-`;
-
 // animation: 3s ${keyframes`${fadeInUp}`} ;
 export const Header = styled.header`
   margin: 0px;
@@ -29,14 +20,15 @@ export const Header = styled.header`
   background-color: #282c34;
   background-color: #303137;
   // width: 100vw;
-  height: 3.5vh;
+  // height: 3.5vh;
+  height: 10%;
   color: #7d6c53;
-  font-size: calc(10px + 2vmin);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  // justify-content: flex-end; // N/A
+  // justify-content: space-between; // N/A
   // overflow: hidden;          // N/A
+  // font-size: calc(10px + 2vmin); // N/A
   position: sticky;
   position: -webkit-sticky; //Safari
   top: 0;
@@ -46,7 +38,28 @@ export const Header = styled.header`
   }
   z-index: 10;
 
-  // outline: 2px dotted red;
+  outline: 2px dotted red; 
+`;
+
+export const HeaderSMIconList = styled.div`
+  width: auto;
+  height: 3.5vh;
+   align-self: flex-start; //need this for Social Icons
+  display: none;
+  ${Header}:hover & {
+    display: inline-block;
+  align-self: flex-start; //need this for Social Icons
+  }
+
+  // outline: 2px dotted orange;
+`;
+
+export const HambgBar = styled.img`
+  width: auto;
+  height: 3.5vh;
+  // position: relative;    // N/A
+  // right: -20px;          // N/A
+  // outline: 2px dotted yellow;
 `;
 
 export const NavLink = styled.a`
@@ -67,6 +80,8 @@ export const NavLink = styled.a`
     font-weight: 900;
     box-shadow: 0px 0px 4px lightblue;
   }
+
+  // outline: 2px dotted lime;
 `;
 
 // //plain CSS version on NavLink

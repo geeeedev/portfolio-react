@@ -83,6 +83,8 @@ const Skill = () => {
           ))}
         </TechDtlSkill> */}
       </Tech>
+      {/* <h2>GitHub Contributions</h2> */}
+      {/* <Hr /> */}
       <Github>
         <GitHubCalendar
           username="geeeedev"

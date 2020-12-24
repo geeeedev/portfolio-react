@@ -6,8 +6,9 @@ import NavHeader from "./components/Header";
 import PortfolioUI from "./components/PortfolioUI";
 import Skill from "./components/Skill";
 
+// import SocialMediaIcons from './components/SocialMediaIcons';
 
-import SocialMediaIconList from "./components/SocialMediaIconList";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,7 +19,10 @@ function App() {
       <NavHeader />
       <PortfolioUI />  {/* ProjectSection */}
       <Skill />
-      <SocialMediaIconList />
+      
+    {/* <SocialMediaIcons /> */}
+
+      <Footer />
 
     </>
   );

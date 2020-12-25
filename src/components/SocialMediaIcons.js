@@ -15,7 +15,7 @@ const SocialMediaIcons = ({ padSize }) => {
         animation="grow"
         animationDuration={1}
         width="2em"
-        style={{ paddingRight: `${padSize}` }}
+        style={{ paddingRight: `${padSize}`}}
         newPage={true}
       />
       <AnimatedSocialIcon
@@ -27,7 +27,7 @@ const SocialMediaIcons = ({ padSize }) => {
         animationDuration={1}
         width="2em"
         // style={{ padding: "3em", margin: '5%', outline: "1px dashed green" }}
-        style={{ padding: `${padSize}` }}
+        style={{ padding: `${padSize}`}}
         newPage={true}
       />
       {/* <AnimatedSocialIcon

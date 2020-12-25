@@ -13,16 +13,17 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-    {/* <div className="App"> */}
+      {/* <div className="App"> */}
       <GlobalStyle darkMode />
 
       <NavHeader />
-      <PortfolioUI />  {/* ProjectSection */}
-      <Skill />
-      
-    {/* <SocialMediaIcons /> */}
+      {/* <SocialMediaIcons /> */}
 
-      <Footer />
+      
+      {/*<PortfolioUI />  {/* ProjectSection */}
+      {/* <Skill /> */}
+      {/* <Footer /> */}
+
 
     </>
   );

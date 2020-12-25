@@ -14,7 +14,7 @@ const SocialMediaIcons = ({ padSize }) => {
         hoverColor="darkred"
         animation="grow"
         animationDuration={1}
-        width="2em"
+        width="2vw"
         style={{ paddingRight: `${padSize}`}}
         newPage={true}
       />
@@ -25,7 +25,7 @@ const SocialMediaIcons = ({ padSize }) => {
         hoverColor="#1DA1F2"
         animation="bounce"
         animationDuration={1}
-        width="2em"
+        width= "2vw"
         // style={{ padding: "3em", margin: '5%', outline: "1px dashed green" }}
         style={{ padding: `${padSize}`}}
         newPage={true}

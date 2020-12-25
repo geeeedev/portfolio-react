@@ -23,14 +23,12 @@ const NavHeader = () => {
   return (
     <>
       <Img src={HeaderImg} alt="Header Image - Griffith Park Sunset" />
+
+      <HeaderSMIconList>
+        <SocialMediaIcons padSize="0.25em" />
+      </HeaderSMIconList>
       <NavLinkContainer>
-        <HeaderBar>
-          <HeaderSMIconList>
-            {/* <SocialMediaIcons padSize="0.5em"/> */}
-            <SocialMediaIcons padSize="0.25em" />
-          </HeaderSMIconList>
-          <HambgBar src={NavHambg} alt="" />
-        </HeaderBar>
+        <HambgBar src={NavHambg} alt="" />
         <NavLink href="#proj"> Projects </NavLink>
         <NavLink href="#skill"> Skills </NavLink>
         <NavLink href="#contact"> Contact </NavLink>

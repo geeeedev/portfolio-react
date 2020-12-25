@@ -8,28 +8,34 @@ export const Img = styled.img`
   width: 100vw;
   height: 60vh;
   opacity: 0.5;
-  margin-bottom: -4px;
+  // margin-bottom: -4px;
 
   // outline: 2px dotted yellow;
+`;
+
+export const HeaderSMIconList = styled.div`
+  // width: auto;
+  height: 3.5vh;
+  float: left;
+  background-color: #303137;
+
+  // outline: 2px dotted orange;
 `;
 
 // animation: 3s ${keyframes`${fadeInUp}`} ;
 export const NavLinkContainer = styled.header`
   margin: 0px;
-  padding-right: 15px;
+  padding-right: 1%;
   background-color: #282c34;
   background-color: #303137;
   // width: 100vw;
   height: 3.5vh;
-  // height: 10%;
+  // height: auto;
   color: #7d6c53;
   font-size: larger;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  // justify-content: space-between; // N/A
-  // overflow: hidden;          // N/A
-  // font-size: calc(10px + 2vmin); // N/A
   position: sticky;
   position: -webkit-sticky; //Safari
   top: 0;
@@ -39,27 +45,19 @@ export const NavLinkContainer = styled.header`
   }
   z-index: 10;
 
+  // justify-content: space-between; // N/A
+  // overflow: hidden;          // N/A
+  // font-size: calc(10px + 2vmin); // N/A
+
   // outline: 2px dotted red;
 `;
 
-export const HeaderBar = styled.div``;
 
-export const HeaderSMIconList = styled.div`
-  width: auto;
-  height: 3.5vh;
-  align-self: flex-end; //need this for Social Icons
-  ${NavLinkContainer}:hover & {
-    display: block;
-    // align-self: flex-start; //need this for Social Icons
-  }
-
-  // outline: 2px dotted orange;
-`;
 
 export const HambgBar = styled.img`
   width: auto;
   height: 3.5vh;
-  float: right;
+
   // position: relative;    // N/A
   // right: -20px;          // N/A
   // outline: 2px dotted yellow;
@@ -70,7 +68,7 @@ export const NavLink = styled.a`
   text-decoration: none !important; //overriding bootstrap's css
   padding: 0px 5px;
   border-radius: 5px;
-  // font-size: 1.25vw; //proportion to viewport
+  // font-size: 1.5vw; //proportion to viewport
   display: none;
   // NavLink shows when Header is hovered
   ${NavLinkContainer}:hover & {

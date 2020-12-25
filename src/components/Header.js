@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import {
   Img,
+  NavLinkContainer,
+  HeaderBar,
   HeaderSMIconList,
   HambgBar,
-  Header,
   NavLink,
 } from "./StyledHeader";
 import HeaderImg from "../img/HeaderImg.png";
@@ -22,12 +23,14 @@ const NavHeader = () => {
   return (
     <>
       <Img src={HeaderImg} alt="Header Image - Griffith Park Sunset" />
-      <Header>
-        <HeaderSMIconList>
-          {/* <SocialMediaIcons padSize="0.5em"/> */}
-          <SocialMediaIcons padSize="0.25em" />
-        </HeaderSMIconList>
-        <HambgBar src={NavHambg} alt="" />
+      <NavLinkContainer>
+        <HeaderBar>
+          <HeaderSMIconList>
+            {/* <SocialMediaIcons padSize="0.5em"/> */}
+            <SocialMediaIcons padSize="0.25em" />
+          </HeaderSMIconList>
+          <HambgBar src={NavHambg} alt="" />
+        </HeaderBar>
         <NavLink href="#proj"> Projects </NavLink>
         <NavLink href="#skill"> Skills </NavLink>
         <NavLink href="#contact"> Contact </NavLink>
@@ -35,7 +38,7 @@ const NavHeader = () => {
           Resume
         </NavLink>
         {/* <NavLink href="#about"> About </NavLink> */}
-      </Header>
+      </NavLinkContainer>
 
       <Modal
         show={showModal}

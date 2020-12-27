@@ -1,5 +1,6 @@
 // import logo from "./logo.svg";
-import "./App.css";
+// import "./App.css";
+import React, {useState} from 'react';
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./components/StyledGlobal";
 import { darkTheme, lightTheme } from './components/StyledTheme'
@@ -13,14 +14,14 @@ import Footer from "./components/Footer";
 
 function App() {
 
-  const [theme, setTheme] = useState();
-  
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
     <>
-      <ThemeProvider theme={darkTheme}>
+      <ThemeProvider theme={ darkMode && darkTheme || lightTheme}>
         {/* <GlobalStyle darkMode /> */}
         <GlobalStyle />
-        <NavHeader />
+        <NavHeader dkMode={darkMode} setDkMode={setDarkMode} />
         {/* <SocialMediaIcons /> */}
         <PortfolioUI /> {/* ProjectSection */}
         <Skill />

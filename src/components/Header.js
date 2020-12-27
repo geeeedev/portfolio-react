@@ -17,7 +17,7 @@ import Modal from "react-bootstrap/Modal";
 /* Import bottstrap css - can be included here or in src/index.js or App.js INSTEAD OF index.html <link> */
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
-const NavHeader = () => {
+const NavHeader = ({dkMode, setDkMode}) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -28,7 +28,7 @@ const NavHeader = () => {
         <SocialMediaIcons padSize="0.25em" />
       </HeaderSMIconList>
       <NavLinkContainer>
-        <HambgBar src={NavHambg} alt="" />
+        <HambgBar src={NavHambg} alt="" onClick={()=>{setDkMode(!dkMode)}}  />
         <NavLink href="#proj"> Projects </NavLink>
         <NavLink href="#skill"> Skills </NavLink>
         <NavLink href="#contact"> Contact </NavLink>

@@ -9,25 +9,22 @@ export const GlobalStyle = createGlobalStyle`
         // color: #d47b8ae1;
     }
     body {
-        background-color: ${(props) =>
-            props.darkMode ? colorRhino : "whitesmoke"};
-            color: ${(props) => (props.darkMode ? "whitesmoke" : colorRhino)};
+        background-color: ${({theme}) => theme.bgColor};
+        color: ${({theme}) => (theme.txtColor)};
             
         // background-color: yellow;
         // outline: 1px solid green;
     }
 `;
 
-// export const Header = styled.header`  //Not Used?
-//     background-color: #282c34;
-//     // background-color: #333944;
-//     // background-color: #3f4757;
-//     min-height: 5vh;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     font-size: calc(10px + 2vmin);
-//     color: white;
-//     outline: 2px dotted red;
-//   `;
+
+// body {
+//     background-color: ${(props) =>
+//       props.darkMode ? colorRhino : "whitesmoke"};
+//     color: ${(props) => (props.darkMode ? "whitesmoke" : colorRhino)};
+        
+//     // background-color: yellow;
+//     // outline: 1px solid green;
+// }
+
+

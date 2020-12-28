@@ -54,7 +54,7 @@ export const NavLinkContainer = styled.header`
 
 
 
-export const HambgBar = styled.img`
+export const ModeSwitch = styled.img`
   width: auto;
   height: 3.5vh;
 

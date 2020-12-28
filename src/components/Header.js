@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import {
   Img,
   NavLinkContainer,
-  HeaderBar,
+  // HeaderBar,
   HeaderSMIconList,
-  HambgBar,
+  ModeSwitch,
   NavLink,
 } from "./StyledHeader";
 import HeaderImg from "../img/HeaderImg.png";
-import NavHambg from "../img/NavHambgGray.png";
+// import NavHambg from "../img/NavHambgGray.png";
 import MoonIcon from "../img/IconMoon2.png";
 import SunIcon from "../img/IconSun2.ico";
 import CV from "../data/GwennieLauResume.pdf";
@@ -30,7 +30,7 @@ const NavHeader = ({dkMode, setDkMode}) => {
         <SocialMediaIcons padSize="0.25em" />
       </HeaderSMIconList>
       <NavLinkContainer>
-        <HambgBar src={dkMode?SunIcon:MoonIcon} alt="" onClick={()=>{setDkMode(!dkMode)}}  />
+        <ModeSwitch src={dkMode?SunIcon:MoonIcon} alt="Theme Switching Icon" onClick={()=>{setDkMode(!dkMode)}}  />
         <NavLink href="#proj"> Projects </NavLink>
         <NavLink href="#skill"> Skills </NavLink>
         <NavLink href="#contact"> Contact </NavLink>

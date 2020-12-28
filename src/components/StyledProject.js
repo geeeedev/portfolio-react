@@ -85,9 +85,9 @@ export const RepoButton = styled.button.attrs(() => ({
 }))`
   margin: 20px;
   padding: 0.25em 1em;
-  color: #61dafb !important; //override bootstrap setting
+  color: ${({theme})=>theme.btnColor} !important; //override bootstrap setting
   text-decoration: none !important; //override bootstrap setting
-  border: 2px solid #61dafb;
+  border: 2px solid ${({theme})=>theme.btnColor};
   border-radius: 5px;
   background: transparent;
   &:hover {

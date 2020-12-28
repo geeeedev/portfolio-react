@@ -64,7 +64,7 @@ export const HambgBar = styled.img`
 `;
 
 export const NavLink = styled.a`
-  color: #61dafb; //lightBlue
+  color: ${({theme})=>theme.lnkColor}; //lightBlue
   text-decoration: none !important; //overriding bootstrap's css
   padding: 0px 5px;
   border-radius: 5px;
@@ -84,6 +84,8 @@ export const NavLink = styled.a`
 
   // outline: 2px dotted lime;
 `;
+//background-color: ${({theme})=>theme.lnkColor}; //#61dafb swap color
+
 
 // //plain CSS version on NavLink
 // //Style the links inside the header navigation

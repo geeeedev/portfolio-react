@@ -18,13 +18,13 @@ function App() {
 
   return (
     <>
-      <ThemeProvider theme={ darkMode && darkTheme || lightTheme}>
+      <ThemeProvider theme={ (darkMode && darkTheme) || lightTheme}>
         {/* <GlobalStyle darkMode /> */}
         <GlobalStyle />
         <NavHeader dkMode={darkMode} setDkMode={setDarkMode} />
         {/* <SocialMediaIcons /> */}
         <PortfolioUI /> {/* ProjectSection */}
-        <Skill />
+        <Skill dkMode={darkMode}/>
         <Footer />
       </ThemeProvider>
     </>

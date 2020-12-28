@@ -12,18 +12,29 @@ import {
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
 
-const githubTheme = {
+const githubDark = {
   background: "transparent",
-  text: "#fff",
+  text: "#ddd",
   grade4: "hsl(203, 78%, 30%)",
   grade3: "hsl(203, 78%, 44%)",
   grade2: "hsl(203, 78%, 58%)",
   grade1: "hsl(203, 78%, 72%)",
-  grade0: "#888",
+  grade0: "#666",
+};
+
+const githubLight = {
+  background: "transparent",
+  text: "#555",
+  grade4: "hsl(25, 78%, 30%)",
+  grade3: "hsl(25, 78%, 44%)",
+  grade2: "hsl(25, 78%, 58%)",
+  grade1: "hsl(25, 78%, 72%)",
+  grade0: "#ddd",
 };
 
 // const Skill = ({ skillDataObj }) => {
-const Skill = () => {
+  const Skill = ({dkMode}) => {
+
   return (
     <DescSkill id="skill">
       <h2>Skills</h2>
@@ -88,11 +99,11 @@ const Skill = () => {
       <Github>
         <GitHubCalendar
           username="geeeedev"
-          theme={githubTheme}
+          theme={(dkMode && githubDark) || githubLight}
           blockSize={16}
           blockMargin={3}
           fontSize={16}
-          showTotalCount={false}
+          showTotalCount={true}
           // fullYear={false}
         >
           <ReactTooltip delayShow={50} html />

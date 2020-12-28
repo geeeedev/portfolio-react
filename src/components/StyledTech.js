@@ -17,7 +17,7 @@ export const DescSkill = styled(DescProj)`
 `;
 
 export const Hr = styled.hr`
-  border-top: 3px ridge #61dafb;
+  border-top: 3px ridge ${({theme})=>theme.hrColor};
   opacity: 0.5;
 `;
 

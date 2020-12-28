@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-const colorRhino = "#3f4757";
 export const GlobalStyle = createGlobalStyle`
     *{
         box-sizing: border-box;

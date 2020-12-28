@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Img, A, RepoButton, Tooltip } from "./StyledProject";
+import { Row, Col, Img, A, RepoButton } from "./StyledProject";
 import { DescProj, Hr, Tech, TechDtlProj, TechHeader } from "./StyledTech";
 import projPic from "../img/Freeze-or-Spoil_35Port.png";
 // npm i react-animate-on-scroll

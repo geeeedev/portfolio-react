@@ -10,7 +10,7 @@ const SocialMediaIcons = ({ padSize }) => {
         url="https://github.com/geeeedev"
         defaultColor="#b6c3d9" //orig
         // hoverColor="#15202B"
-        hoverColor="#223344"
+        // hoverColor="#223344"
         hoverColor="darkred"
         animation="grow"
         animationDuration={1}

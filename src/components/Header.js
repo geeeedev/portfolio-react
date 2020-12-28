@@ -9,6 +9,8 @@ import {
 } from "./StyledHeader";
 import HeaderImg from "../img/HeaderImg.png";
 import NavHambg from "../img/NavHambgGray.png";
+import MoonIcon from "../img/IconMoon2.png";
+import SunIcon from "../img/IconSun2.ico";
 import CV from "../data/GwennieLauResume.pdf";
 
 import SocialMediaIcons from "./SocialMediaIcons";
@@ -28,7 +30,7 @@ const NavHeader = ({dkMode, setDkMode}) => {
         <SocialMediaIcons padSize="0.25em" />
       </HeaderSMIconList>
       <NavLinkContainer>
-        <HambgBar src={NavHambg} alt="" onClick={()=>{setDkMode(!dkMode)}}  />
+        <HambgBar src={dkMode?SunIcon:MoonIcon} alt="" onClick={()=>{setDkMode(!dkMode)}}  />
         <NavLink href="#proj"> Projects </NavLink>
         <NavLink href="#skill"> Skills </NavLink>
         <NavLink href="#contact"> Contact </NavLink>

@@ -62,14 +62,14 @@ export const Img = styled.img.attrs(() => ({
   width: 100%;
   height: 80%;
   transition: transform 0.5s linear;
-
   &:hover {
     // opacity: 0.5;
     transform: scale(1.05);
-    box-shadow: 0px 0px 6px ${({theme})=>theme.lnkShdColor};
+    box-shadow: 0px 0px 6px ${({ theme }) => theme.lnkShdColor};
   }
 
-  //position: relative;
+  position: relative;
+
   // tooltip: "click for live project";
 `;
 
@@ -78,34 +78,43 @@ export const A = styled.a.attrs(() => ({
   rel: "noopener noreferrer",
 }))``;
 
-
 export const RepoButton = styled.button.attrs(() => ({
   target: "_blank",
   rel: "noopener noreferrer",
 }))`
   margin: 20px;
   padding: 0.25em 1em;
-  color: ${({theme})=>theme.btnColor} !important; //override bootstrap setting
+  color: ${({ theme }) =>
+    theme.btnColor} !important; //override bootstrap setting
   text-decoration: none !important; //override bootstrap setting
-  border: 2px solid ${({theme})=>theme.btnColor};
+  border: 2px solid ${({ theme }) => theme.btnColor};
   border-radius: 5px;
   background: transparent;
   &:hover {
     font-weight: 900;
-    box-shadow: 0px 0px 4px ${({theme})=>theme.lnkShdColor};
+    box-shadow: 0px 0px 4px ${({ theme }) => theme.lnkShdColor};
   }
 
   // outline: 1px solid lime;
 `;
 
-// export const Tooltip = styled.span`
-//   visibility: hidden;
-//   color: red;
-//   text-align: center;
-//   position: absolute;
-//   z-index: 2;
+export const Tooltip = styled.span`
+  padding: 5px 0;
+  border-radius: 5px;
+  width: 120px;
+  background-color: white;
+  color: red;
+  text-align: center;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;  
+  // opacity: 0;
+  // transition: opacity 0.4s;
 
-//   ${ImgProj}:hover & {
-//     visibility: visible;
-//   }
-// `;
+  ${RepoButton}:hover & {
+    visibility: visible;
+    // opacity: 1;
+  }
+`;

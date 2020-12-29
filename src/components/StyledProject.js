@@ -66,7 +66,7 @@ export const Img = styled.img.attrs(() => ({
   &:hover {
     // opacity: 0.5;
     transform: scale(1.05);
-    box-shadow: 0px 0px 6px lightblue;
+    box-shadow: 0px 0px 6px ${({theme})=>theme.lnkShdColor};
   }
 
   //position: relative;
@@ -92,7 +92,7 @@ export const RepoButton = styled.button.attrs(() => ({
   background: transparent;
   &:hover {
     font-weight: 900;
-    box-shadow: 0px 0px 4px lightblue;
+    box-shadow: 0px 0px 4px ${({theme})=>theme.lnkShdColor};
   }
 
   // outline: 1px solid lime;

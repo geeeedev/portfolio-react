@@ -13,7 +13,7 @@ const Project = ({ projDataObj, idx }) => {
       <ScrollAnimation
         animateIn="fadeInUp"
         duration={3}
-        delay={1000}
+        delay={300}
         animateOnce={true}
       >
         <Row key={idx}>

@@ -11,7 +11,7 @@ const SocialMediaIcons = ({ padSize }) => {
         defaultColor="#b6c3d9" //orig
         // hoverColor="#15202B"
         // hoverColor="#223344"
-        hoverColor="darkred"
+        hoverColor="Chocolate"
         animation="grow"
         animationDuration={1}
         width="2vw"

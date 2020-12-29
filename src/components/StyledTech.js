@@ -10,10 +10,10 @@ export const DescProj = styled.div`
 `;
 
 export const DescSkill = styled(DescProj)`
-  padding: 5% 8%;
+  padding: 8% 8% 2%;
   text-align: center;
 
-  // outline: 1px dotted pink;
+  // outline: 1px dotted PaleVioletRed;
 `;
 
 export const Hr = styled.hr`

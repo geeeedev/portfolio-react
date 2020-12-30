@@ -21,15 +21,14 @@ const Project = ({ projDataObj, idx }) => {
             {/* Click for Live Proj or GitHub Repo Instead */}
             {projDataObj.links.site ? (
               <A href={projDataObj.links.site}>
-                <Img src={projPic} />
                 {/* <Img src={projDataObj.image} /> */}
+                <Img src={projPic} />
+                <Tooltip> Click for Live Project</Tooltip>
               </A>
             ) : (
               <A href={projDataObj.links.repo}>
-                <Img src={projPic} />
-                <Tooltip> Click for Live Project</Tooltip>
-                
                 {/* <Img src={projDataObj.image} /> */}
+                <Img src={projPic} />
               </A>
             )}
           </Col>

@@ -68,15 +68,16 @@ export const Img = styled.img.attrs(() => ({
     box-shadow: 0px 0px 6px ${({ theme }) => theme.lnkShdColor};
   }
 
-  position: relative;
-
   // tooltip: "click for live project";
 `;
 
 export const A = styled.a.attrs(() => ({
   target: "_blank",
   rel: "noopener noreferrer",
-}))``;
+}))`
+  position: relative;
+  z-index: 1;
+`;
 
 export const RepoButton = styled.button.attrs(() => ({
   target: "_blank",
@@ -102,14 +103,14 @@ export const Tooltip = styled.span`
   padding: 5px 0;
   border-radius: 5px;
   width: 120px;
-  background-color: white;
+  background-color: #555;
   color: red;
   text-align: center;
   visibility: hidden;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;  
+  bottom: -30%;
+  right: -10%;
+  z-index: 2;
   // opacity: 0;
   // transition: opacity 0.4s;
 

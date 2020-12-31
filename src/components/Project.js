@@ -1,5 +1,13 @@
 import React from "react";
-import { Row, Col, Img, A, RepoButton, Tooltip } from "./StyledProject";
+import {
+  Row,
+  Col,
+  Img,
+  A,
+  RepoButton,
+  TooltipDiv,
+  Tooltip,
+} from "./StyledProject";
 import { DescProj, Hr, Tech, TechDtlProj, TechHeader } from "./StyledTech";
 import projPic from "../img/Freeze-or-Spoil_35Port.png";
 // npm i react-animate-on-scroll
@@ -20,14 +28,13 @@ const Project = ({ projDataObj, idx }) => {
           <Col idx={idx}>
             {/* Click for Live Proj or GitHub Repo Instead */}
             {projDataObj.links.site ? (
-              <>
-                <A href={projDataObj.links.site}>
-                  {/* <Img src={projDataObj.image} /> */}
-                  <Img src={projPic} />
-                  {/* <Tooltip> Click for Live Project</Tooltip> */}
-                  
-                </A>
-              </>
+                <TooltipDiv>
+                  <A href={projDataObj.links.site}>
+                    {/* <Img src={projDataObj.image} /> */}
+                    <Img src={projPic} />
+                    <Tooltip>See Live Project</Tooltip>
+                  </A>
+                </TooltipDiv>
             ) : (
               <A href={projDataObj.links.repo}>
                 {/* <Img src={projDataObj.image} /> */}

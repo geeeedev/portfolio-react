@@ -69,10 +69,7 @@ export const Img = styled.img.attrs(() => ({
 export const A = styled.a.attrs(() => ({
   target: "_blank",
   rel: "noopener noreferrer",
-}))`
-  position: relative;
-  z-index: 1;
-`;
+}))``;
 
 export const RepoButton = styled.button.attrs(() => ({
   target: "_blank",
@@ -94,23 +91,29 @@ export const RepoButton = styled.button.attrs(() => ({
   // outline: 1px solid lime;
 `;
 
-// export const Tooltip = styled.span`
-//   padding: 5px 0;
-//   border-radius: 5px;
-//   width: 120px;
-//   background-color: #555;
-//   color: red;
-//   text-align: center;
-//   visibility: visible;
-//   position: absolute;
-//   bottom: -30%;
-//   right: -10%;
-//   z-index: 2;
-//   // opacity: 0;
-//   // transition: opacity 0.4s;
+export const TooltipDiv = styled.div`
+  position: relative;
 
-//   ${Img}:hover & {
-//     visibility: visible;
-//     // opacity: 1;
-//   }
-// `;
+  // outline: 1px solid lime;
+`;
+
+export const Tooltip = styled.span`
+  padding: 5px 5px;
+  border-radius: 5px;
+  width: 160px;
+  background-color: #555;
+  color: yellow;
+  text-align: center;
+  visibility: hidden;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  z-index: 2;
+  // opacity: 0;
+  // transition: opacity 0.4s;
+
+  ${TooltipDiv}:hover & {
+    visibility: visible;
+    // opacity: 1;
+  }
+`;

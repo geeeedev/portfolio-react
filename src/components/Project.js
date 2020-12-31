@@ -28,18 +28,21 @@ const Project = ({ projDataObj, idx }) => {
           <Col idx={idx}>
             {/* Click for Live Proj or GitHub Repo Instead */}
             {projDataObj.links.site ? (
-                <TooltipDiv>
-                  <A href={projDataObj.links.site}>
-                    {/* <Img src={projDataObj.image} /> */}
-                    <Img src={projPic} />
-                    <Tooltip>See Live Project</Tooltip>
-                  </A>
-                </TooltipDiv>
+              <TooltipDiv>
+                <A href={projDataObj.links.site}>
+                  {/* <Img src={projDataObj.image} /> */}
+                  <Img src={projPic} />
+                  <Tooltip>Live Project</Tooltip>
+                </A>
+              </TooltipDiv>
             ) : (
-              <A href={projDataObj.links.repo}>
-                {/* <Img src={projDataObj.image} /> */}
-                <Img src={projPic} />
-              </A>
+              // <TooltipDiv> 
+                <A href={projDataObj.links.repo}>
+                  {/* <Img src={projDataObj.image} /> */}
+                  <Img src={projPic} />
+                  {/* <Tooltip>Source Code</Tooltip> */}
+                </A>
+              // </TooltipDiv> 
             )}
           </Col>
 

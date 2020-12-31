@@ -100,9 +100,9 @@ export const TooltipDiv = styled.div`
 export const Tooltip = styled.span`
   padding: 5px 5px;
   border-radius: 5px;
-  width: 160px;
+  width: 130px;
   background-color: #555;
-  color: yellow;
+  color: ${({ theme }) => theme.liveColor};
   text-align: center;
   visibility: hidden;
   position: absolute;

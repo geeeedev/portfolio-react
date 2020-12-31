@@ -8,7 +8,7 @@ const SocialMediaIcons = ({ padSize }) => {
       <AnimatedSocialIcon
         brandName="github"
         url="https://github.com/geeeedev"
-        defaultColor="#b6c3d9" //orig
+        defaultColor="#b6c3d9" 
         // hoverColor="#15202B"
         // hoverColor="#223344"
         hoverColor="Chocolate"

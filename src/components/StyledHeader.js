@@ -3,7 +3,6 @@ import styled from "styled-components";
 // npm i react-animations
 // import { fadeInUp } from "react-animations";
 
-// animation: 3s ${keyframes`${fadeInUp}`} ;
 export const Img = styled.img`
   width: 100vw;
   height: 60vh;
@@ -32,7 +31,6 @@ export const NavLinkContainer = styled.header`
   background-color: ${({theme})=>theme.barColor};
   // width: 100vw;
   height: 3.5vh;
-  // height: auto;
   font-size: larger;
   font-weight: 500;
   display: flex;
@@ -43,10 +41,7 @@ export const NavLinkContainer = styled.header`
   top: 0;
   z-index: 10;
 
-  // justify-content: space-between; // N/A
-  // overflow: hidden;          // N/A
   // font-size: calc(10px + 2vmin); // N/A
-
   // outline: 2px dotted red;
 `;
 
@@ -69,7 +64,7 @@ export const NavLink = styled.a`
   border-radius: 5px;
   // font-size: 1.5vw; //proportion to viewport
   display: none;
-  // NavLink shows when Header is hovered
+  // NavLinks show when its Container is hovered
   ${NavLinkContainer}:hover & {
     display: block;
   }
@@ -83,8 +78,6 @@ export const NavLink = styled.a`
 
   // outline: 2px dotted lime;
 `;
-//background-color: ${({theme})=>theme.lnkColor}; //#61dafb swap color
-
 
 // //plain CSS version on NavLink
 // //Style the links inside the header navigation

@@ -4,10 +4,8 @@ import Projects from "../data/Projects.json";
 import Project from "./Project";
 
 
-// import SocialMediaIconList from "./SocialMediaIconList";
-
 const PortfolioUI = () => {  
-  //This should really be ProjectSection or ProjectListing
+  //This should really be ProjectSection or ProjectList
   return (
     <>
     <ProjContainer id="proj"> 

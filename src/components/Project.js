@@ -12,7 +12,7 @@ const Project = ({ projDataObj, idx }) => {
       {/* <RotateDiv> &lt; 💅🏾 &gt; </RotateDiv> */}
       <ScrollAnimation
         animateIn="fadeInUp"
-        duration={3}
+        duration={5}
         delay={300}
         animateOnce={true}
       >
@@ -20,11 +20,14 @@ const Project = ({ projDataObj, idx }) => {
           <Col idx={idx}>
             {/* Click for Live Proj or GitHub Repo Instead */}
             {projDataObj.links.site ? (
-              <A href={projDataObj.links.site}>
-                {/* <Img src={projDataObj.image} /> */}
-                <Img src={projPic} />
-                <Tooltip> Click for Live Project</Tooltip>
-              </A>
+              <>
+                <A href={projDataObj.links.site}>
+                  {/* <Img src={projDataObj.image} /> */}
+                  <Img src={projPic} />
+                  {/* <Tooltip> Click for Live Project</Tooltip> */}
+                  
+                </A>
+              </>
             ) : (
               <A href={projDataObj.links.repo}>
                 {/* <Img src={projDataObj.image} /> */}

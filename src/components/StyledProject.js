@@ -50,8 +50,6 @@ export const Col = styled.div`
   flex: 1;
   order: ${({ idx }) => (idx % 2 === 0 ? "2" : "1")};
 
-  // &:hover {background-color: olive;} ///////////// Test
-  //position: relative;
   // z-index: -1;  //canNOT use -1, -1 kills onClick
   // outline: 1px dashed green; //////////// Col - green dash
 `;
@@ -63,12 +61,9 @@ export const Img = styled.img.attrs(() => ({
   height: 80%;
   transition: transform 0.5s linear;
   &:hover {
-    // opacity: 0.5;
     transform: scale(1.05);
     box-shadow: 0px 0px 6px ${({ theme }) => theme.lnkShdColor};
   }
-
-  // tooltip: "click for live project";
 `;
 
 export const A = styled.a.attrs(() => ({
@@ -99,23 +94,23 @@ export const RepoButton = styled.button.attrs(() => ({
   // outline: 1px solid lime;
 `;
 
-export const Tooltip = styled.span`
-  padding: 5px 0;
-  border-radius: 5px;
-  width: 120px;
-  background-color: #555;
-  color: red;
-  text-align: center;
-  visibility: hidden;
-  position: absolute;
-  bottom: -30%;
-  right: -10%;
-  z-index: 2;
-  // opacity: 0;
-  // transition: opacity 0.4s;
+// export const Tooltip = styled.span`
+//   padding: 5px 0;
+//   border-radius: 5px;
+//   width: 120px;
+//   background-color: #555;
+//   color: red;
+//   text-align: center;
+//   visibility: visible;
+//   position: absolute;
+//   bottom: -30%;
+//   right: -10%;
+//   z-index: 2;
+//   // opacity: 0;
+//   // transition: opacity 0.4s;
 
-  ${RepoButton}:hover & {
-    visibility: visible;
-    // opacity: 1;
-  }
-`;
+//   ${Img}:hover & {
+//     visibility: visible;
+//     // opacity: 1;
+//   }
+// `;

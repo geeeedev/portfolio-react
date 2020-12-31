@@ -1,12 +1,13 @@
 const rhino = "#3f4757";
 const white = "floralwhite";
 const blue = "#61dafb";
-const olive = "DarkSlateGray"; //"DarkOliveGreen";
+// const olive = "DarkOliveGreen";
+// const olive = "DarkSlateGray";
 const red = "Maroon";
 const liBlue = "LightBlue";
 const liBlk = "black";
 const dark3 = "#302D30"; //"#303137"
-const dark2 = "#303137"
+const dark2 = "#303137";
 const dark1 = "#4D4844";
 
 export const darkTheme = {

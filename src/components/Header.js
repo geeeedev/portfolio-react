@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import {
   Img,
   NavLinkContainer,
-  // HeaderBar,
   HeaderSMIconList,
   ModeSwitch,
   NavLink,
 } from "./StyledHeader";
 import HeaderImg from "../img/HeaderImg.png";
-// import NavHambg from "../img/NavHambgGray.png";
 import MoonIcon from "../img/IconMoon2.png";
 import SunIcon from "../img/IconSun2.ico";
 import CV from "../data/GwennieLauResume.pdf";
@@ -33,7 +31,7 @@ const NavHeader = ({dkMode, setDkMode}) => {
         <ModeSwitch src={dkMode?SunIcon:MoonIcon} alt="Theme Switching Icon" onClick={()=>{setDkMode(!dkMode)}}  />
         <NavLink href="#proj"> Projects </NavLink>
         <NavLink href="#skill"> Skills </NavLink>
-        <NavLink href="#contact"> Contact </NavLink>
+        {/* <NavLink href="#contact"> Contact </NavLink> */}
         <NavLink href="#resume" onClick={() => setShowModal(true)}>
           Resume
         </NavLink>
@@ -44,7 +42,6 @@ const NavHeader = ({dkMode, setDkMode}) => {
         show={showModal}
         size="lg"
         onHide={() => setShowModal(false)}
-        // aria-labelledby="Gwennie's Resume in PDF"
       >
         {/* <Modal.Header closeButton>
           <Modal.Title> Gwennie's Resume </Modal.Title>

@@ -52,8 +52,8 @@ export const TechHeaderSub = styled.h5`
 export const TechDtlProj = styled.div`
   padding: 20px 10px;
   margin: 10px;
-  // margin-bottom: 30px;
 
+  // margin-bottom: 30px;
   // outline: 1px dotted orange;
 `;
 

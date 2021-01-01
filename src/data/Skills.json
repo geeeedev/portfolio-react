@@ -16,7 +16,7 @@
         "HTML5",
         "DOM"
     ],
-    "frontend-UPCOMING":["React","[Redux]","[Vue]","Styled-Component","Material-UI","Material Table","React Bootstrap","jQuery","JavaScript/ES6+","Razor","JSX","JSS","Boostrap","CSS3","AJAX","HTML5","DOM"],
+    "frontend-UPCOMING":["Redux","Vue"],
     "backend":[
         "Node",
         "Express",
@@ -38,7 +38,7 @@
         "ASP.NET MVC",
         "Django"
     ],
-    "framework-UPCOMING":["React (library)","[Vue]","jQuery (library)","Express","ASP.NET MVC","Django"],
+    "framework-UPCOMING":["Vue"],
     "database":[
         "MongoDB",
         "MySQL",
@@ -54,9 +54,9 @@
         "MS SQL Server 2012",
         "Oracle 12c"
     ],
-    "deployment-UPCOMING":["AWS EC2","[Firebase]","[Vercel]","[Netlify]","GitHub"],
+    "deployment-UPCOMING":["Firebase"],
     "tool":{
-        "deployment":["AWS EC2","GitHub"],
+        "deployment":["AWS EC2","Vercel","Netlify","GitHub"],
         "versionControl":["Git","Team Foundation Server (TFS) 2015"],
         "others":
         [

@@ -20,7 +20,7 @@ import HeaderImg10 from "../img/HeaderImg10.png";
 import HeaderImg11 from "../img/HeaderImg11.png";
 import HeaderImg12 from "../img/HeaderImg12.png";
 import HeaderImg13 from "../img/HeaderImg13.png";
-import HeaderImg133 from "../img/HeaderImg133.jpg";
+import HeaderImg13x from "../img/HeaderImg13x.png";
 import HeaderImg14 from "../img/HeaderImg14.jpg";
 import HeaderImg15 from "../img/HeaderImg15.jpg";
 
@@ -40,66 +40,66 @@ const NavHeader = ({ dkMode, setDkMode }) => {
 
   return (
     <>
-      <Carousel indicators={false} fade interval={5000} >
-        <Carousel.Item interval={7000} >
+      <Carousel indicators={false} fade interval={5000}>
+        <Carousel.Item interval={7000}>
           <Img src={HeaderImg00} alt="Header Image - " />
         </Carousel.Item>
 
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg01} alt="Header Image - " />
         </Carousel.Item>
 
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg02} alt="Header Image - " />
         </Carousel.Item>
 
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg03} alt="Header Image - " />
         </Carousel.Item>
 
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg04} alt="Header Image - " />
         </Carousel.Item>
 
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg05} alt="Header Image - " />
         </Carousel.Item>
 
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg06} alt="Header Image - " />
         </Carousel.Item>
 
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg07} alt="Header Image - " />
         </Carousel.Item>
 
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg08} alt="Header Image - " />
         </Carousel.Item>
 
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg09} alt="Header Image - " />
         </Carousel.Item>
 
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg10} alt="Header Image - " />
         </Carousel.Item>
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg11} alt="Header Image - " />
         </Carousel.Item>
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg12} alt="Header Image - " />
         </Carousel.Item>
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg13} alt="Header Image - " />
         </Carousel.Item>
-        <Carousel.Item >
-          <Img src={HeaderImg133} alt="Header Image - " />
+        <Carousel.Item>
+          <Img src={HeaderImg13x} alt="Header Image - " />
         </Carousel.Item>
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg14} alt="Header Image - " />
         </Carousel.Item>
-        <Carousel.Item >
+        <Carousel.Item>
           <Img src={HeaderImg15} alt="Header Image - Griffith Park Sunset" />
         </Carousel.Item>
       </Carousel>

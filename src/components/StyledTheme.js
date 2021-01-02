@@ -4,7 +4,7 @@ const blue = "#61dafb";
 // const olive = "DarkOliveGreen";
 // const olive = "DarkSlateGray";
 const red = "Maroon";
-const pink = "pink";
+const pink = "peachpuff";  //pink
 const liBlue = "LightBlue";
 const liBlk = "black";
 const dark3 = "#302D30"; //"#303137"
@@ -21,7 +21,7 @@ export const darkTheme = {
   lnkShdColor: liBlue,
   hrColor: blue,
   btnColor: blue,
-  liveColor: blue,
+  liveColor: liBlue,
 };
 
 export const lightTheme = {

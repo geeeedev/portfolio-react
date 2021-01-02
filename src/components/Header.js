@@ -93,15 +93,8 @@ const NavHeader = ({ dkMode, setDkMode }) => {
         <Carousel.Item>
           <Img src={HeaderImg13} alt="Header Image - " />
         </Carousel.Item>
-        <Carousel.Item>
-          <Img src={HeaderImg13x} alt="Header Image - " />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Img src={HeaderImg14} alt="Header Image - " />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Img src={HeaderImg15} alt="Header Image - Griffith Park Sunset" />
-        </Carousel.Item>
+        
+       
       </Carousel>
 
       <HeaderSMIconList>

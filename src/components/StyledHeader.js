@@ -6,8 +6,9 @@ import styled from "styled-components";
 export const Img = styled.img`
   width: 100vw;
   height: 60vh;
-  opacity: ${({theme})=>theme.opac};
+  opacity: ${({ theme }) => theme.opac};
   // margin-bottom: -4px;
+  // position: fixed;
 
   // outline: 2px dotted yellow;
 `;
@@ -15,7 +16,7 @@ export const Img = styled.img`
 export const HeaderSMIconList = styled.div`
   height: 3.5vh;
   float: left;
-  background-color: ${({theme})=>theme.barColor};
+  background-color: ${({ theme }) => theme.barColor};
   position: sticky;
   position: -webkit-sticky; //Safari
   top: 0;
@@ -28,7 +29,7 @@ export const HeaderSMIconList = styled.div`
 export const NavLinkContainer = styled.header`
   margin: 0px;
   padding-right: 1%;
-  background-color: ${({theme})=>theme.barColor};
+  background-color: ${({ theme }) => theme.barColor};
   // width: 100vw;
   height: 3.5vh;
   font-size: larger;
@@ -45,6 +46,19 @@ export const NavLinkContainer = styled.header`
   // outline: 2px dotted red;
 `;
 
+export const BriefAbout = styled.div`
+  height: 3.5vh;
+  font-family: Monaco;
+  font-size: calc(7px + 1vmin); 
+  color: #b6c3d9;
+  position: absolute;
+  top: 15%;
+  right: 30%; //25 @media
+  left: 34%; //28 @media
+
+  // outline: 2px dotted pink;
+`;
+
 export const ModeSwitch = styled.img`
   width: auto;
   height: 3.5vh;
@@ -58,7 +72,7 @@ export const ModeSwitch = styled.img`
 `;
 
 export const NavLink = styled.a`
-  color: ${({theme})=>theme.lnkColor}; 
+  color: ${({ theme }) => theme.lnkColor};
   text-decoration: none !important; //overriding bootstrap's css
   padding: 0px 5px;
   border-radius: 5px;
@@ -70,10 +84,10 @@ export const NavLink = styled.a`
   }
   // styles when each NavLink is hovered
   &:hover {
-    background-color: ${({theme})=>theme.lnkColor}; //swap color
-    color: ${({theme})=>theme.lnkHvColor};
+    background-color: ${({ theme }) => theme.lnkColor}; //swap color
+    color: ${({ theme }) => theme.lnkHvColor};
     font-weight: 900;
-    box-shadow: 0px 0px 4px ${({theme})=>theme.lnkShdColor};
+    box-shadow: 0px 0px 4px ${({ theme }) => theme.lnkShdColor};
   }
 
   // outline: 2px dotted lime;

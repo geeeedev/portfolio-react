@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import {
   Img,
-  NavLinkContainer,
   HeaderSMIconList,
+  NavLinkContainer,
+  BriefAbout,
   ModeSwitch,
   NavLink,
 } from "./StyledHeader";
@@ -93,14 +94,15 @@ const NavHeader = ({ dkMode, setDkMode }) => {
         <Carousel.Item>
           <Img src={HeaderImg13} alt="Header Image - " />
         </Carousel.Item>
-        
-       
       </Carousel>
 
       <HeaderSMIconList>
         <SocialMediaIcons padSize="0.25em" />
       </HeaderSMIconList>
       <NavLinkContainer>
+        <BriefAbout>
+          I code.&nbsp;&nbsp;I cook.&nbsp;&nbsp;I skate.&nbsp;&nbsp;I photograph.
+        </BriefAbout>
         <ModeSwitch
           src={dkMode ? SunIcon : MoonIcon}
           alt="Theme Switching Icon"

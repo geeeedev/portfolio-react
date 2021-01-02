@@ -6,16 +6,24 @@ import {
   ModeSwitch,
   NavLink,
 } from "./StyledHeader";
-import HeaderImg0 from "../img/HeaderImg0z.png";
-import HeaderImg1 from "../img/HeaderImg1.png";
-import HeaderImg2 from "../img/HeaderImg2.png";
-import HeaderImg3 from "../img/HeaderImg3.png";
-import HeaderImg4 from "../img/HeaderImg4.png";
-import HeaderImg5 from "../img/HeaderImg5.png";
-import HeaderImg6 from "../img/HeaderImg6.png";
-import HeaderImg7 from "../img/HeaderImg7.png";
-import HeaderImg8 from "../img/HeaderImg8.png";
-import HeaderImg9 from "../img/HeaderImg9.png";
+import HeaderImg00 from "../img/HeaderImg0z.png";
+import HeaderImg01 from "../img/HeaderImg01.png";
+import HeaderImg02 from "../img/HeaderImg02.png";
+import HeaderImg03 from "../img/HeaderImg03.png";
+import HeaderImg04 from "../img/HeaderImg04.png";
+import HeaderImg05 from "../img/HeaderImg05.png";
+import HeaderImg06 from "../img/HeaderImg06.png";
+import HeaderImg07 from "../img/HeaderImg07.png";
+import HeaderImg08 from "../img/HeaderImg08.png";
+import HeaderImg09 from "../img/HeaderImg09.png";
+import HeaderImg10 from "../img/HeaderImg10.png";
+import HeaderImg11 from "../img/HeaderImg11.png";
+import HeaderImg12 from "../img/HeaderImg12.png";
+import HeaderImg13 from "../img/HeaderImg13.png";
+import HeaderImg133 from "../img/HeaderImg133.jpg";
+import HeaderImg14 from "../img/HeaderImg14.jpg";
+import HeaderImg15 from "../img/HeaderImg15.jpg";
+
 import MoonIcon from "../img/IconMoon2.png";
 import SunIcon from "../img/IconSun2.ico";
 import CV from "../data/GwennieLauResume.pdf";
@@ -32,45 +40,67 @@ const NavHeader = ({ dkMode, setDkMode }) => {
 
   return (
     <>
-      <Carousel indicators={false} slide interval={5000} >
+      <Carousel indicators={false} fade interval={5000} >
         <Carousel.Item interval={7000} >
-          <Img src={HeaderImg0} alt="Header Image - Griffith Park Sunset" />
+          <Img src={HeaderImg00} alt="Header Image - " />
         </Carousel.Item>
 
         <Carousel.Item >
-          <Img src={HeaderImg1} alt="Header Image - Griffith Park Sunset" />
+          <Img src={HeaderImg01} alt="Header Image - " />
         </Carousel.Item>
 
         <Carousel.Item >
-          <Img src={HeaderImg2} alt="Header Image - Griffith Park Sunset" />
+          <Img src={HeaderImg02} alt="Header Image - " />
         </Carousel.Item>
 
         <Carousel.Item >
-          <Img src={HeaderImg3} alt="Header Image - Griffith Park Sunset" />
+          <Img src={HeaderImg03} alt="Header Image - " />
         </Carousel.Item>
 
         <Carousel.Item >
-          <Img src={HeaderImg4} alt="Header Image - Griffith Park Sunset" />
+          <Img src={HeaderImg04} alt="Header Image - " />
         </Carousel.Item>
 
         <Carousel.Item >
-          <Img src={HeaderImg5} alt="Header Image - Griffith Park Sunset" />
+          <Img src={HeaderImg05} alt="Header Image - " />
         </Carousel.Item>
 
         <Carousel.Item >
-          <Img src={HeaderImg6} alt="Header Image - Griffith Park Sunset" />
+          <Img src={HeaderImg06} alt="Header Image - " />
         </Carousel.Item>
 
         <Carousel.Item >
-          <Img src={HeaderImg7} alt="Header Image - Griffith Park Sunset" />
+          <Img src={HeaderImg07} alt="Header Image - " />
         </Carousel.Item>
 
         <Carousel.Item >
-          <Img src={HeaderImg8} alt="Header Image - Griffith Park Sunset" />
+          <Img src={HeaderImg08} alt="Header Image - " />
         </Carousel.Item>
-        
+
         <Carousel.Item >
-          <Img src={HeaderImg9} alt="Header Image - Griffith Park Sunset" />
+          <Img src={HeaderImg09} alt="Header Image - " />
+        </Carousel.Item>
+
+        <Carousel.Item >
+          <Img src={HeaderImg10} alt="Header Image - " />
+        </Carousel.Item>
+        <Carousel.Item >
+          <Img src={HeaderImg11} alt="Header Image - " />
+        </Carousel.Item>
+        <Carousel.Item >
+          <Img src={HeaderImg12} alt="Header Image - " />
+        </Carousel.Item>
+        <Carousel.Item >
+          <Img src={HeaderImg13} alt="Header Image - " />
+        </Carousel.Item>
+        <Carousel.Item >
+          <Img src={HeaderImg133} alt="Header Image - " />
+        </Carousel.Item>
+        <Carousel.Item >
+          <Img src={HeaderImg14} alt="Header Image - " />
+        </Carousel.Item>
+        <Carousel.Item >
+          <Img src={HeaderImg15} alt="Header Image - Griffith Park Sunset" />
         </Carousel.Item>
       </Carousel>
 

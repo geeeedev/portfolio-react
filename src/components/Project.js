@@ -9,7 +9,7 @@ import {
   Tooltip,
 } from "./StyledProject";
 import { DescProj, Hr, Tech, TechDtlProj, TechHeader } from "./StyledTech";
-import projPic from "../img/Freeze-or-Spoil_35Port.png";
+import projPic from "../img/Freeze-or-Spoil_35.png";
 // npm i react-animate-on-scroll
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -30,16 +30,16 @@ const Project = ({ projDataObj, idx }) => {
             {projDataObj.links.site ? (
               <TooltipDiv>
                 <A href={projDataObj.links.site}>
-                  {/* <Img src={projDataObj.image} /> */}
-                  <Img src={projPic} />
+                  <Img src={projDataObj.image} />
+                  {/* <Img src={projPic} /> */}
                   <Tooltip>Live Project</Tooltip>
                 </A>
               </TooltipDiv>
             ) : (
               // <TooltipDiv> 
                 <A href={projDataObj.links.repo}>
-                  {/* <Img src={projDataObj.image} /> */}
-                  <Img src={projPic} />
+                  <Img src={projDataObj.image} />
+                  {/* <Img src={projPic} /> */}
                   {/* <Tooltip>Source Code</Tooltip> */}
                 </A>
               // </TooltipDiv> 

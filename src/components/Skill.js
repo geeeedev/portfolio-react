@@ -48,40 +48,40 @@ const Skill = ({ dkMode }) => {
           <TechDtlSkill>
             {" "}
             <TechHeader>Frontend:</TechHeader>
-            {skillDataObj.frontend.map((each) => (
-              <div>{each}</div>
+            {skillDataObj.frontend.map((each,i) => (
+              <div key={i}>{each}</div>
             ))}
           </TechDtlSkill>
           <TechDtlSkill>
             <TechHeader>Backend:</TechHeader>
-            {skillDataObj.backend.map((each) => (
-              <div>{each}</div>
+            {skillDataObj.backend.map((each,i) => (
+              <div key={i}>{each}</div>
             ))}
           </TechDtlSkill>
           <TechDtlSkill>
             <TechHeader>Framework:</TechHeader>
-            {skillDataObj.framework.map((each) => (
-              <div>{each}</div>
+            {skillDataObj.framework.map((each,i) => (
+              <div key={i}>{each}</div>
             ))}
           </TechDtlSkill>
           <TechDtlSkill>
             <TechHeader>Database:</TechHeader>
-            {skillDataObj.database.map((each) => (
-              <div>{each}</div>
+            {skillDataObj.database.map((each,i) => (
+              <div key={i}>{each}</div>
             ))}
           </TechDtlSkill>
           <TechDtlSkill>
             <TechHeader>Tool:</TechHeader>
-            {skillDataObj.tool.others.map((each) => (
-              <div>{each}</div>
+            {skillDataObj.tool.others.map((each,i) => (
+              <div key={i}>{each}</div>
             ))}
             <TechHeaderSub>Deployment:</TechHeaderSub>
-            {skillDataObj.tool.deployment.map((each) => (
-              <div>{each}</div>
+            {skillDataObj.tool.deployment.map((each,i) => (
+              <div key={i}>{each}</div>
             ))}
             <TechHeaderSub>Version Control:</TechHeaderSub>
-            {skillDataObj.tool.versionControl.map((each) => (
-              <div>{each}</div>
+            {skillDataObj.tool.versionControl.map((each,i) => (
+              <div key={i}>{each}</div>
             ))}
           </TechDtlSkill>
           {/* <TechDtlSkill>

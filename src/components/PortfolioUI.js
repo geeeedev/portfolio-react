@@ -10,7 +10,7 @@ const PortfolioUI = () => {
     <>
     <ProjContainer id="proj"> 
       {Projects.map((proj, idx) => (
-        <Project projDataObj={proj} idx={idx}/>
+        <Project projDataObj={proj} idx={idx} key={idx}/>
       ))}
     </ProjContainer> 
     </>

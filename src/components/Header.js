@@ -7,7 +7,7 @@ import {
   NavLink,
 } from "./StyledHeader";
 
-import ImgCarousel from "./Carousel";
+import ImgCarousel from "./ImgCarousel";
 import SocialMediaIcons from "./SocialMediaIcons";
 
 import MoonIcon from "../img/IconMoon2.png";

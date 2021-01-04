@@ -24,7 +24,7 @@ const Project = ({ projDataObj, idx }) => {
         delay={300}
         animateOnce={true}
       >
-        <Row key={idx}>
+        <Row >
           <Col idx={idx}>
             {/* Click for Live Proj or GitHub Repo Instead */}
             {projDataObj.links.site ? (
@@ -60,8 +60,8 @@ const Project = ({ projDataObj, idx }) => {
                 {projDataObj.frontendAry && (
                   <TechDtlProj>
                     <TechHeader>Frontend: </TechHeader>
-                    {projDataObj.frontendAry.map((each) => (
-                      <div>{each}</div>
+                    {projDataObj.frontendAry.map((each, i) => (
+                      <div key={i}>{each}</div>
                     ))}
                   </TechDtlProj>
                 )}
@@ -69,8 +69,8 @@ const Project = ({ projDataObj, idx }) => {
                 {projDataObj.backend && (
                   <TechDtlProj>
                     <TechHeader>Backend: </TechHeader>
-                    {projDataObj.backend.map((each) => (
-                      <div>{each}</div>
+                    {projDataObj.backend.map((each, i) => (
+                      <div key={i}>{each}</div>
                     ))}
                   </TechDtlProj>
                 )}

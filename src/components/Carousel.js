@@ -29,9 +29,9 @@ importAllImgs(require.context("../img/", false, /^\.\/HeaderImg\d\d\.png$/));
 const ImgCarousel = () => {
   return (
     <Carousel indicators={false} fade interval={5000}>
-      {Object.keys(headerImages).map((img) => (
-        <Carousel.Item>
-          <Img src={headerImages[img].default} alt="Header Carousel" />
+      {Object.keys(headerImages).map((img, i) => (
+        <Carousel.Item key={i}>
+          <Img src={headerImages[img].default} alt="Header Photo Carousel" />
         </Carousel.Item>
       ))}
     </Carousel>

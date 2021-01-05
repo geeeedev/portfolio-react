@@ -17,6 +17,23 @@
         "image":"https://s3.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/HobbyHub2.png"
     },
     {   
+        "name": "Silly PacMan",
+        "description":"A Dumb Down version of PacMan Game",
+        "status": "Live",
+        "category": ["Game","Fun"],
+        "date":"October 2020",
+        "frontendAry":["JavaScript","jQuery","CSS3","HTML5"],
+        "frontendStr":"JavaScript,jQuery,CSS3,HTML5",
+        "backend":[],
+        "database":"",
+        "deployment":"GitHub Pages",
+        "links":{
+            "repo":"https://github.com/geeeedev/PacMan",
+            "site":"https://geeeedev.github.io/PacMan/"
+        },
+        "image":"https://i.redd.it/ko8rxxqv1yty.jpg"
+    },
+    {   
         "name": "Freeze-Or-Spoil",
         "description":"A freezer food storage tracking single page app in MERN",
         "status": "Repo",
@@ -31,8 +48,9 @@
             "repo":"https://github.com/geeeedev/Freeze-Or-Spoil",
             "site":""
         },
-        "image":"../img/Freeze-or-Spoil_35.png"
+        "image":"../img/ProjectImg2.png"
     },
+
     {   
         "name": "Chitty Chat",
         "description":"A real-time online messenging app in SocketIO",
@@ -48,7 +66,7 @@
             "repo":"https://github.com/geeeedev/ChittyChat",
             "site":""
         },
-        "image":"https://i.redd.it/ko8rxxqv1yty.jpg"
+        "image":"../img/ProjectImg3.png"
     },
     {   
         "name": "Table For Who",
@@ -65,7 +83,7 @@
             "repo":"https://github.com/geeeedev/TableForWho",
             "site":""
         },
-        "image":"https://i.redd.it/ko8rxxqv1yty.jpg"
+        "image":"../img/ProjectImg4.png"
     },
     {   
         "name": "Phantom Buy",
@@ -82,7 +100,7 @@
             "repo":"https://github.com/geeeedev/PhantomBuy",
             "site":""
         },
-        "image":"https://i.redd.it/ko8rxxqv1yty.jpg"
+        "image":"../img/ProjectImg5.png"
     },
     {   
         "name": "Adopt-A-Cat",
@@ -99,6 +117,6 @@
             "repo":"https://github.com/geeeedev/Adopt-A-Cat",
             "site":""
         },
-        "image":"https://i.redd.it/ko8rxxqv1yty.jpg"
+        "image":"../img/ProjectImg6.png"
     }
 ]

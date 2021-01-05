@@ -37,7 +37,7 @@ const Project = ({ projDataObj, idx }) => {
                 </A>
               </TooltipDiv>
             ) : (
-              <A href={projDataObj.links.repo}>
+              <A href={`${projDataObj.links.repo}/blob/master/ReadMe.md`}>
                 <ImgProject idx={idx} />
                 {/* <Img src={projDataObj.image} /> */}
                 {/* <Img src={projPic} /> */}

@@ -59,6 +59,7 @@ export const TechDtlProj = styled.div`
 
 export const TechDtlSkill = styled(TechDtlProj)`
   flex-grow: 1;
+  // text-align: left;
 
   // outline: 1px dotted orange;
 `;

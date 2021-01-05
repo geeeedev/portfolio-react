@@ -2,7 +2,6 @@ import React from "react";
 import {
   Row,
   Col,
-  // ImgContainer,
   A,
   RepoButton,
   TooltipDiv,
@@ -31,23 +30,18 @@ const Project = ({ projDataObj, idx }) => {
             {projDataObj.links.site ? (
               <TooltipDiv>
                 <A href={projDataObj.links.site}>
-                  {/* <ImgContainer> */}
                   <ImgProject idx={idx} />
-                  {/* </ImgContainer> */}
                   {/* <Img src={projDataObj.image} /> */}
                   {/* <Img src={projPic} /> */}
                   <Tooltip>Live Project</Tooltip>
                 </A>
               </TooltipDiv>
             ) : (
-              // <TooltipDiv>
               <A href={projDataObj.links.repo}>
                 <ImgProject idx={idx} />
                 {/* <Img src={projDataObj.image} /> */}
                 {/* <Img src={projPic} /> */}
-                {/* <Tooltip>Source Code</Tooltip> */}
               </A>
-              // </TooltipDiv>
             )}
           </Col>
 

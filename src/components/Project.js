@@ -2,7 +2,7 @@ import React from "react";
 import {
   Row,
   Col,
-  Img,
+  // ImgContainer,
   A,
   RepoButton,
   TooltipDiv,
@@ -10,6 +10,7 @@ import {
 } from "./StyledProject";
 import { DescProj, Hr, Tech, TechDtlProj, TechHeader } from "./StyledTech";
 import projPic from "../img/Freeze-or-Spoil_35.png";
+import ImgProject from "./ImgProject";
 // npm i react-animate-on-scroll
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -24,25 +25,29 @@ const Project = ({ projDataObj, idx }) => {
         delay={300}
         animateOnce={true}
       >
-        <Row >
+        <Row>
           <Col idx={idx}>
             {/* Click for Live Proj or GitHub Repo Instead */}
             {projDataObj.links.site ? (
               <TooltipDiv>
                 <A href={projDataObj.links.site}>
-                  <Img src={projDataObj.image} />
+                  {/* <ImgContainer> */}
+                  <ImgProject idx={idx} />
+                  {/* </ImgContainer> */}
+                  {/* <Img src={projDataObj.image} /> */}
                   {/* <Img src={projPic} /> */}
                   <Tooltip>Live Project</Tooltip>
                 </A>
               </TooltipDiv>
             ) : (
-              // <TooltipDiv> 
-                <A href={projDataObj.links.repo}>
-                  <Img src={projDataObj.image} />
-                  {/* <Img src={projPic} /> */}
-                  {/* <Tooltip>Source Code</Tooltip> */}
-                </A>
-              // </TooltipDiv> 
+              // <TooltipDiv>
+              <A href={projDataObj.links.repo}>
+                <ImgProject idx={idx} />
+                {/* <Img src={projDataObj.image} /> */}
+                {/* <Img src={projPic} /> */}
+                {/* <Tooltip>Source Code</Tooltip> */}
+              </A>
+              // </TooltipDiv>
             )}
           </Col>
 

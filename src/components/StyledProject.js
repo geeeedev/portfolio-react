@@ -36,7 +36,7 @@ import styled from "styled-components";
 // per project
 export const Row = styled.div`
   padding: 3% 8%;
-  display: inline-flex;
+  display: flex;  //inline-flex
   flex-wrap: wrap;
   // justify-content: ${(props) => props.justify};  //N/A
   justify-content: ${({ justify }) => justify || "space-evenly"};
@@ -51,8 +51,18 @@ export const Col = styled.div`
   order: ${({ idx }) => (idx % 2 === 0 ? "2" : "1")};
 
   // z-index: -1;  //canNOT use -1, -1 kills onClick
-  // outline: 1px dashed green; //////////// Col - green dash
+  // outline: 1px dashed gold; //////////// Col - gold dash
 `;
+
+// export const ImgContainer = styled.div`
+//   width: 100%;
+//   height: 80%;
+//   transition: transform 0.5s linear;
+//   &:hover {
+//     transform: scale(1.05);
+//     box-shadow: 0px 0px 6px ${({ theme }) => theme.lnkShdColor};
+//   }
+// `;
 
 export const Img = styled.img.attrs(() => ({
   alt: "Project Screenshot",

@@ -58,8 +58,7 @@
     "tool":{
         "deployment":["AWS EC2","Vercel","Netlify","GitHub"],
         "versionControl":["Git","Team Foundation Server (TFS) 2015"],
-        "others":
-        [
+        "others":[
             "GitHub",
             "VS Code",
             "Postman",

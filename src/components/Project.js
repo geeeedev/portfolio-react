@@ -8,7 +8,7 @@ import {
   Tooltip,
 } from "./StyledProject";
 import { DescProj, Hr, Tech, TechDtlProj, TechHeader } from "./StyledTech";
-import projPic from "../img/Freeze-or-Spoil_35.png";
+// import projPic from "../img/Freeze-or-Spoil_35.png";  //placeholder
 import ImgProject from "./ImgProject";
 // npm i react-animate-on-scroll
 import ScrollAnimation from "react-animate-on-scroll";
@@ -39,27 +39,24 @@ const Project = ({ projDataObj, idx }) => {
             ) : (
               <A href={`${projDataObj.links.repo}/blob/master/ReadMe.md`}>
                 <ImgProject idx={idx} />
-                {/* <Img src={projDataObj.image} /> */}
-                {/* <Img src={projPic} /> */}
               </A>
             )}
           </Col>
 
           <Col>
             <DescProj idx={idx}>
-              {/* <span>{idx}</span> */}
               <h2>
-                {projDataObj.name}{" "}
-                {/* {projDataObj.status && `~ ${projDataObj.status}`} */}
+                {projDataObj.name}
+                {/*{" "} {projDataObj.status && `~ ${projDataObj.status}`} */}
               </h2>
               <Hr />
               <h4>{projDataObj.description}</h4>
 
               <Tech idx={idx}>
-                {projDataObj.frontendAry && (
+                {projDataObj.frontend && (
                   <TechDtlProj>
                     <TechHeader>Frontend: </TechHeader>
-                    {projDataObj.frontendAry.map((each, i) => (
+                    {projDataObj.frontend.map((each, i) => (
                       <div key={i}>{each}</div>
                     ))}
                   </TechDtlProj>
@@ -89,7 +86,6 @@ const Project = ({ projDataObj, idx }) => {
                 )}
               </Tech>
 
-              {/* GitHub Click */}
               {projDataObj.links.repo && (
                 <RepoButton as="a" href={projDataObj.links.repo}>
                   View Source Code

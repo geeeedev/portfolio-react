@@ -1,14 +1,10 @@
-// import logo from "./logo.svg";
-// import "./App.css";
 import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./components/StyledGlobal";
 import { darkTheme, lightTheme } from "./components/StyledTheme";
 import NavHeader from "./components/Header";
-import PortfolioUI from "./components/PortfolioUI";
-import Skill from "./components/Skill";
-
-// import SocialMediaIcons from './components/SocialMediaIcons';
+import ProjectList from "./components/ProjectList";
+import Skills from "./components/Skills";
 
 import Footer from "./components/Footer";
 
@@ -21,9 +17,8 @@ function App() {
         {/* <GlobalStyle darkMode /> */}
         <GlobalStyle />
         <NavHeader dkMode={darkMode} setDkMode={setDarkMode} />
-        {/* <SocialMediaIcons /> */}
-        <PortfolioUI /> {/* ProjectSection */}
-        <Skill dkMode={darkMode} />
+        <ProjectList />
+        <Skills dkMode={darkMode} />
         <Footer />
       </ThemeProvider>
     </>

@@ -28,6 +28,7 @@ import styled from "styled-components";
 //   }
 // `;
 
+
 // animation-name: ${slowEmerge};
 // animation-duration: 3s;
 // animation-style: linear;
@@ -36,13 +37,13 @@ import styled from "styled-components";
 // per project
 export const Row = styled.div`
   padding: 3% 8%;
-  display: flex;  //inline-flex
+  display: flex;
   flex-wrap: wrap;
-  // justify-content: ${(props) => props.justify};  //N/A
+  //justify-content: ${(props) => props.justify};  
   justify-content: ${({ justify }) => justify || "space-evenly"};
   align-items: center;
 
-  // outline: 1px solid blue; //////////// Row - blue
+  // outline: 1px solid blue; 
 `;
 
 // per project item: img vs. desc
@@ -51,29 +52,22 @@ export const Col = styled.div`
   order: ${({ idx }) => (idx % 2 === 0 ? "2" : "1")};
 
   // z-index: -1;  //canNOT use -1, -1 kills onClick
-  // outline: 1px dashed gold; //////////// Col - gold dash
+  // outline: 1px dashed gold; 
 `;
-
-// export const ImgContainer = styled.div`
-//   width: 100%;
-//   height: 80%;
-//   transition: transform 0.5s linear;
-//   &:hover {
-//     transform: scale(1.05);
-//     box-shadow: 0px 0px 6px ${({ theme }) => theme.lnkShdColor};
-//   }
-// `;
 
 export const Img = styled.img.attrs(() => ({
   alt: "Project Screenshot",
 }))`
   width: 100%;
   height: 80%;
+  border-radius: 12px;
   transition: transform 0.5s linear;
   &:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 6px ${({ theme }) => theme.lnkShdColor};
   }
+
+  // outline: 1px solid orange; 
 `;
 
 export const A = styled.a.attrs(() => ({
@@ -119,11 +113,11 @@ export const Tooltip = styled.span`
   bottom: 10px;
   right: 15px;
   z-index: 2;
-  // opacity: 0;
-  // transition: opacity 0.4s;
+  opacity: 0;
+  transition: opacity 0.5s;
 
   ${TooltipDiv}:hover & {
     visibility: visible;
-    // opacity: 1;
+    opacity: 1;
   }
 `;

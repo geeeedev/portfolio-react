@@ -43,7 +43,12 @@ export const Row = styled.div`
   justify-content: ${({ justify }) => justify || "space-evenly"};
   align-items: center;
 
-  // outline: 1px solid blue; 
+  @media (max-width:1000px) {
+    // border-bottom: 1px dotted lightblue;
+    margin-bottom: 10%;
+  }
+
+  // outline: 1px solid blue;   
 `;
 
 // per project item: img vs. desc

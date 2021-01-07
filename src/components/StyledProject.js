@@ -51,6 +51,10 @@ export const Col = styled.div`
   flex: 1;
   order: ${({ idx }) => (idx % 2 === 0 ? "2" : "1")};
 
+  @media (max-width:1000px) {
+    flex-basis: auto;
+  }
+
   // z-index: -1;  //canNOT use -1, -1 kills onClick
   // outline: 1px dashed gold; 
 `;
@@ -67,8 +71,11 @@ export const Img = styled.img.attrs(() => ({
     box-shadow: 0px 0px 6px ${({ theme }) => theme.lnkShdColor};
   }
 
+  
   // outline: 1px solid orange; 
 `;
+
+
 
 export const A = styled.a.attrs(() => ({
   target: "_blank",

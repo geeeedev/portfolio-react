@@ -6,6 +6,10 @@ export const DescProj = styled.div`
   height: 100%;
   text-align: ${({ idx }) => (idx % 2 === 0 ? "right" : "left")};
 
+  @media (max-width:1000px) {
+    text-align: center;
+  }
+
   // outline: 1px dotted pink;
 `;
 
@@ -25,6 +29,10 @@ export const Tech = styled.div`
   display: flex;
   justify-content: ${({ idx }) => (idx % 2 === 0 ? "flex-end" : "flex-start")};
   // text-align: ${({ idx }) => (idx % 2 === 0 ? "right" : "left")};
+
+  @media (max-width:1000px) {
+    justify-content: center;
+  }
 
   // outline: 1px dotted yellow;
 `;

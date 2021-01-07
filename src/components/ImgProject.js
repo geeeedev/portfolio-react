@@ -19,8 +19,8 @@ const importAllImgs = (r) => {
 importAllImgs(require.context("../img/", false, /^\.\/ProjectImg\d\.png$/));
 //importAllImgs(require.context("../img/", false, /\.png$/));
 
-console.log(`projectImages`, projectImages);
-console.log(`imgKeys`, Object.keys(projectImages));
+// console.log(`projectImages`, projectImages);
+// console.log(`imgKeys`, Object.keys(projectImages));
 /** expected obj
  * projectImages = {
  *  "0"/"projectImg0.png": Module { default:"...imgPath" },
@@ -31,7 +31,7 @@ console.log(`imgKeys`, Object.keys(projectImages));
  */
 
 const ImgProject = ({ idx }) => {
-  console.log(`idx`, idx);
+  // console.log(`idx`, idx);
   return (
     <Img src={projectImages[idx].default} alt="Project Screenshot" key={idx} />
   );

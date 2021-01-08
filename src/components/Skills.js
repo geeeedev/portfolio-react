@@ -3,7 +3,7 @@ import skillDataObj from "../data/Skills.json";
 import {
   DescSkill,
   Hr,
-  Tech,
+  TechSkill,
   TechDtlSkill,
   Github,
   TechHeader,
@@ -44,7 +44,7 @@ const Skills = ({ dkMode }) => {
       <DescSkill id="skill">
         <h2>Skills</h2>
         <Hr />
-        <Tech>
+        <TechSkill>
           <TechDtlSkill>
             {" "}
             <TechHeader>Frontend:</TechHeader>
@@ -97,7 +97,7 @@ const Skills = ({ dkMode }) => {
               <div>{each}</div>
             ))}
           </TechDtlSkill> */}
-        </Tech>
+        </TechSkill>
         {/* <h2>GitHub Contributions</h2> */}
         {/* <Hr /> */}
         <Github>

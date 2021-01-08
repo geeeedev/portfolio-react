@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import {screen} from '../data/breakpoints';
+import { screen } from "../data/breakpoints";
 
 export const DescProj = styled.div`
   padding: 5%;
   width: 100%;
   height: 100%;
   text-align: ${({ idx }) => (idx % 2 === 0 ? "right" : "left")};
-
   @media ${screen.Lg} {
     text-align: center;
   }
@@ -29,10 +28,16 @@ export const Hr = styled.hr`
 export const Tech = styled.div`
   display: flex;
   justify-content: ${({ idx }) => (idx % 2 === 0 ? "flex-end" : "flex-start")};
-  // text-align: ${({ idx }) => (idx % 2 === 0 ? "right" : "left")};
-
   @media ${screen.Lg} {
     justify-content: center;
+  }
+
+  // outline: 1px dotted yellow;
+`;
+
+export const TechSkill = styled(Tech)`
+  @media ${screen.Lg} {
+    display: block;
   }
 
   // outline: 1px dotted yellow;

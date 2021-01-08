@@ -43,7 +43,6 @@ export const Row = styled.div`
   //justify-content: ${(props) => props.justify};  
   justify-content: ${({ justify }) => justify || "space-evenly"};
   align-items: center;
-
   @media ${screen.Lg} {
     margin-bottom: 10%;
   }
@@ -55,7 +54,6 @@ export const Row = styled.div`
 export const Col = styled.div`
   flex: 1;
   order: ${({ idx }) => (idx % 2 === 0 ? "2" : "1")};
-
   @media ${screen.Lg} {
     order: 1;
     flex-basis: auto;  //occupy full w/h initially avail
@@ -76,7 +74,6 @@ export const Img = styled.img.attrs(() => ({
     transform: scale(1.05);
     box-shadow: 0px 0px 6px ${({ theme }) => theme.lnkShdColor};
   }
-
   
   // outline: 1px solid orange; 
 `;

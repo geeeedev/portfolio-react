@@ -5,6 +5,8 @@ import { darkTheme, lightTheme } from "./components/StyledTheme";
 import NavHeader from "./components/Header";
 import ProjectList from "./components/ProjectList";
 import Skills from "./components/Skills";
+/* Import bootstrap css - can be included in specific component or in src/index.js or App.js INSTEAD OF index.html <link> */
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from "./components/Footer";
 
@@ -14,7 +16,6 @@ function App() {
   return (
     <>
       <ThemeProvider theme={(darkMode && darkTheme) || lightTheme}>
-        {/* <GlobalStyle darkMode /> */}
         <GlobalStyle />
         <NavHeader dkMode={darkMode} setDkMode={setDarkMode} />
         <ProjectList />

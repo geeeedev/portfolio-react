@@ -6,13 +6,11 @@ import Project from "./Project";
 
 const ProjectList = () => {  
   return (
-    <>
     <ProjContainer id="proj"> 
       {Projects.map((proj, idx) => (
         <Project projDataObj={proj} idx={idx} key={idx}/>
       ))}
     </ProjContainer> 
-    </>
   );
 };
 

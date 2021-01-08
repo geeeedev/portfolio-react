@@ -15,7 +15,7 @@ import SunIcon from "../img/IconSun2.ico";
 import CV from "../data/GwennieLauResume.pdf";
 
 import Modal from "react-bootstrap/Modal";
-/* Import bottstrap css - can be included here or in src/index.js or App.js INSTEAD OF index.html <link> */
+/* Import bootstrap css - can be included here or in src/index.js or App.js INSTEAD OF index.html <link> */
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavHeader = ({ dkMode, setDkMode }) => {

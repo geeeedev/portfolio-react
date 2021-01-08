@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-
+// App.js: {/* <GlobalStyle darkMode /> */}
 // body {
 //     background-color: ${(props) =>
 //       props.darkMode ? colorRhino : "whitesmoke"};

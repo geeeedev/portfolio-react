@@ -58,7 +58,7 @@ export const Col = styled.div`
 
   @media ${screen.Lg} {
     order: 1;
-    flex-basis: auto;  //occupy full w/h avail
+    flex-basis: auto;  //occupy full w/h initially avail
   }
 
   // z-index: -1;  //canNOT use -1, -1 kills onClick

@@ -49,12 +49,28 @@ export const NavLinkContainer = styled.header`
 export const BriefAbout = styled.div`
   height: 3.5vh;
   font-family: Monaco;
-  font-size: calc(7px + 1vmin); 
+  font-size: calc(7px + 1vmin);
   color: #b6c3d9;
   position: absolute;
   top: 15%;
-  right: 30%; //25 @media
-  left: 34%; //28 @media
+  left: 37%;
+
+  @media (max-width: 1400px) {
+    left: 34%;
+  }
+
+  @media (max-width: 1000px) {
+    left: 28%;
+  }
+
+  @media (max-width: 800px) {
+    left: 23%;
+  }
+
+  @media (max-width: 600px) {
+    top: 19%;
+    left: 16%;
+  }
 
   // outline: 2px dotted pink;
 `;

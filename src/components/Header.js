@@ -30,7 +30,7 @@ const NavHeader = ({ dkMode, setDkMode }) => {
       </HeaderSMIconList>
       <NavLinkContainer>
         <BriefAbout>
-          I code.&nbsp;&nbsp;I cook.&nbsp;&nbsp;I skate.&nbsp;&nbsp;I
+          I code.&nbsp;&nbsp;&nbsp;I skate.&nbsp;&nbsp;&nbsp;I
           photograph.
         </BriefAbout>
         <ModeSwitch

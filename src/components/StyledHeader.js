@@ -14,8 +14,9 @@ export const Img = styled.img`
   // outline: 2px dotted yellow;
 `;
 
+const barHeight = "calc(7px + 3vmin)";  //3.5vh;
 export const HeaderSMIconList = styled.div`
-  height: 3.5vh;
+  height: ${barHeight};
   float: left;
   background-color: ${({ theme }) => theme.barColor};
   position: sticky;
@@ -32,7 +33,7 @@ export const NavLinkContainer = styled.header`
   padding-right: 1%;
   background-color: ${({ theme }) => theme.barColor};
   // width: 100vw;
-  height: 3.5vh;
+  height: ${barHeight};
   font-size: larger;
   font-weight: 500;
   display: flex;
@@ -48,26 +49,22 @@ export const NavLinkContainer = styled.header`
 `;
 
 export const BriefAbout = styled.div`
-  height: 3.5vh;
+  height: ${barHeight};
   font-family: Monaco;
   font-size: calc(7px + 1vmin);
   color: #b6c3d9;
   position: absolute;
   top: 15%;
   left: 39%;
-
   @media ${screen.Xl} {
     left: 32%;
   }
-
   @media ${screen.Lg} {
     left: 28%;
   }
-
   @media ${screen.Md} {
     left: 23%;
   }
-
   @media ${screen.Sm} {
     top: 19%;
     left: 16%;
@@ -78,7 +75,7 @@ export const BriefAbout = styled.div`
 
 export const ModeSwitch = styled.img`
   width: auto;
-  height: 3.5vh;
+  height: ${barHeight};
   &:hover {
     transform: scale(1.3);
   }

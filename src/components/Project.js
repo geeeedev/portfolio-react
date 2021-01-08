@@ -10,15 +10,14 @@ import {
 import { DescProj, Hr, Tech, TechDtlProj, TechHeader } from "./StyledTech";
 // import projPic from "../img/Freeze-or-Spoil_35.png";  //placeholder
 import ImgProject from "./ImgProject";
-// npm i react-animate-on-scroll
-import ScrollAnimation from "react-animate-on-scroll";
+import ProjScrollAnimation from "react-animate-on-scroll";   // npm i 
 
 const Project = ({ projDataObj, idx }) => {
   // console.log(`CurrImg`, projDataObj.image);
   return (
     <>
       {/* <RotateDiv> &lt; 💅🏾 &gt; </RotateDiv> */}
-      <ScrollAnimation
+      <ProjScrollAnimation
         animateIn="fadeInUp"
         duration={5}
         delay={300}
@@ -71,7 +70,7 @@ const Project = ({ projDataObj, idx }) => {
                   </TechDtlProj>
                 )}
 
-                {/* {projDataObj.database && ( //not needed for now
+                {/* {projDataObj.database && (    //not needed for now
                 <TechDtlProj>
                   <TechHeader>Database: </TechHeader>
                   <div>{projDataObj.database} </div>
@@ -94,7 +93,7 @@ const Project = ({ projDataObj, idx }) => {
             </DescProj>
           </Col>
         </Row>
-      </ScrollAnimation>
+      </ProjScrollAnimation>
     </>
   );
 };

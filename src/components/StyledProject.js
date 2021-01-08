@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {screen} from '../data/breakpoints';
 // import { keyframes } from "styled-components";
 
 // const rotate = keyframes`
@@ -43,7 +44,7 @@ export const Row = styled.div`
   justify-content: ${({ justify }) => justify || "space-evenly"};
   align-items: center;
 
-  @media (max-width:1000px) {
+  @media ${screen.Lg} {
     margin-bottom: 10%;
   }
 
@@ -55,7 +56,7 @@ export const Col = styled.div`
   flex: 1;
   order: ${({ idx }) => (idx % 2 === 0 ? "2" : "1")};
 
-  @media (max-width:1000px) {
+  @media ${screen.Lg} {
     order: 1;
     flex-basis: auto;  //occupy full w/h avail
   }

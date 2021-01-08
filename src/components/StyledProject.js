@@ -44,7 +44,6 @@ export const Row = styled.div`
   align-items: center;
 
   @media (max-width:1000px) {
-    // border-bottom: 1px dotted lightblue;
     margin-bottom: 10%;
   }
 
@@ -57,7 +56,8 @@ export const Col = styled.div`
   order: ${({ idx }) => (idx % 2 === 0 ? "2" : "1")};
 
   @media (max-width:1000px) {
-    flex-basis: auto;
+    order: 1;
+    flex-basis: auto;  //occupy full w/h avail
   }
 
   // z-index: -1;  //canNOT use -1, -1 kills onClick

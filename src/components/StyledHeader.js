@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { screen } from "../data/breakpoints";
 // import { keyframes } from "styled-components";
 // npm i react-animations
 // import { fadeInUp } from "react-animations";
@@ -53,21 +54,21 @@ export const BriefAbout = styled.div`
   color: #b6c3d9;
   position: absolute;
   top: 15%;
-  left: 37%;
+  left: 39%;
 
-  @media (max-width: 1400px) {
-    left: 34%;
+  @media ${screen.Xl} {
+    left: 32%;
   }
 
-  @media (max-width: 1000px) {
+  @media ${screen.Lg} {
     left: 28%;
   }
 
-  @media (max-width: 800px) {
+  @media ${screen.Md} {
     left: 23%;
   }
 
-  @media (max-width: 600px) {
+  @media ${screen.Sm} {
     top: 19%;
     left: 16%;
   }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {screen} from '../data/breakpoints';
 
 export const DescProj = styled.div`
   padding: 5%;
@@ -6,7 +7,7 @@ export const DescProj = styled.div`
   height: 100%;
   text-align: ${({ idx }) => (idx % 2 === 0 ? "right" : "left")};
 
-  @media (max-width:1000px) {
+  @media ${screen.Lg} {
     text-align: center;
   }
 
@@ -21,7 +22,7 @@ export const DescSkill = styled(DescProj)`
 `;
 
 export const Hr = styled.hr`
-  border-top: 3px ridge ${({theme})=>theme.hrColor};
+  border-top: 3px ridge ${({ theme }) => theme.hrColor};
   opacity: 0.5;
 `;
 
@@ -30,7 +31,7 @@ export const Tech = styled.div`
   justify-content: ${({ idx }) => (idx % 2 === 0 ? "flex-end" : "flex-start")};
   // text-align: ${({ idx }) => (idx % 2 === 0 ? "right" : "left")};
 
-  @media (max-width:1000px) {
+  @media ${screen.Lg} {
     justify-content: center;
   }
 
@@ -53,7 +54,6 @@ export const TechHeader = styled.h4`
 export const TechHeaderSub = styled.h5`
   margin-top: 1%;
   font-weight: bolder;
-
 `;
 
 // li with list-style: url('icon.svg')

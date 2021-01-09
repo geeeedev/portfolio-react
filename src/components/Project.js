@@ -79,7 +79,7 @@ const Project = ({ projDataObj, idx }) => {
 
                 {projDataObj.deployment && (
                   <TechDtlProj>
-                    <TechHeader>Deployment: </TechHeader>
+                    <TechHeader>Deploy: </TechHeader>
                     <div>{projDataObj.deployment} </div>
                   </TechDtlProj>
                 )}

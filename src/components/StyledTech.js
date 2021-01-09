@@ -37,7 +37,7 @@ export const Tech = styled.div`
 
 export const TechSkill = styled(Tech)`
   @media ${screen.Lg} {
-    display: block;
+    flex-direction: column;  // row was default
   }
 
   // outline: 1px dotted yellow;

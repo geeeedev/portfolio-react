@@ -69,6 +69,10 @@ export const BriefAbout = styled.div`
     top: 19%;
     left: 16%;
   }
+  @media ${screen.Xs} {
+    top: 19%;
+    left: 10%;
+  }
 
   // outline: 2px dotted pink;
 `;

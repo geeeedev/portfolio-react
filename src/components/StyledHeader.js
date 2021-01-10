@@ -67,7 +67,7 @@ export const BriefAbout = styled.div`
   }
   @media ${screen.Sm} {
     top: 19%;
-    left: 16%;
+    left: 14%;
   }
   @media ${screen.Xs} {
     top: 19%;

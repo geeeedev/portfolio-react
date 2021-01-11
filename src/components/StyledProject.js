@@ -78,8 +78,6 @@ export const Img = styled.img.attrs(() => ({
   // outline: 1px solid orange; 
 `;
 
-
-
 export const A = styled.a.attrs(() => ({
   target: "_blank",
   rel: "noopener noreferrer",

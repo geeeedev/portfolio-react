@@ -17,8 +17,20 @@
 - [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/)
 - Responsive Web Developemnt
 - Deployment:    
-- [x] Vercel
-- [x] netlify     
+    - [x] Vercel
+    - [x] netlify     
+
+| Technologies Used: |
+| :-- |
+| - React |
+| - Styled-Component |
+| - Bootstrap |
+| - [Animated Social Icons](https://meko-deng.github.io/react-animated-social-icons/) |
+| - [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/) |
+| - Responsive Web Developemnt |
+| - Deployment:  <br>&nbsp;&nbsp;&nbsp;[x] Vercel <br>&nbsp;&nbsp;&nbsp;[x] netlify   |
+    
+        
 
 | Frontend Features: |
 | :--- |

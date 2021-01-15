@@ -18,8 +18,8 @@
 | - [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/) | | - Fade In |
 | - Responsive Web | | - GitHub Stats |
 | - Deployment:     | | - Social Media Icons  |
-|     - [X] Vercel  |
-|     - [X] netlify |     
+|     - [x] Vercel  |
+|     - [x] netlify |     
 
 ### Frontend Features:
 - Dark/Light Theme

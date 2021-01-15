@@ -28,7 +28,7 @@
 | - [Animated Social Icons](https://meko-deng.github.io/react-animated-social-icons/) |
 | - [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/) |
 | - Responsive Web Developemnt |
-| - Deployment:  <br>   - [x] Vercel <br>   - [x] netlify   |
+| - Deployment:  <br>&nbsp;&nbsp;&nbsp;[x] Vercel <br>&nbsp;&nbsp;&nbsp;[x] netlify   |
     
         
 

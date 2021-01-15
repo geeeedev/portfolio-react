@@ -1,6 +1,6 @@
 
 ## Gwennie's Portfolio
-### This is my Website Portfolio for my development skills.
+### This is a Website Portfolio for my Full Stack Development Skills.
 <Dec2020>
 <DeployOnVercel20210108>
 <DeployOnNetlify20210109>
@@ -13,13 +13,21 @@
 - React
 - Styled-Component
 - Bootstrap
-- Bootstrap Carousel
 - [Animated Social Icons](https://meko-deng.github.io/react-animated-social-icons/)
 - [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/)
 - Responsive Web Developement
 - Deployment: 
     - [X] Vercel
     - [X] Netlify
+
+### Frontend Features:
+- Dark/Light Theme
+- Bootstrap Carousel
+- Sticky Nav Bar
+- Tooltip
+- Fade In
+- GitHub Stats
+- Social Media Icons
 
 ***\* Additional comments are notes I left in for my learning purposes \****
 

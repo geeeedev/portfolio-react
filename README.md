@@ -16,7 +16,7 @@
 | - Bootstrap | - Sticky Nav Bar |
 | - [Animated Social Icons](https://meko-deng.github.io/react-animated-social-icons/) | - Tooltip |
 | - [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/) | - Fade In |
-| - Responsive Web Developement | - GitHub Stats |
+| - Responsive Web | - GitHub Stats |
 | - Deployment:     | - Social Media Icons  |
 |     - [X] Vercel  |
 |     - [X] netlify |     

@@ -9,16 +9,17 @@
 [![Deployment Status](https://img.shields.io/endpoint?url=https://devx.sh/api/deployment)](https://devx.sh)
 
 
-### Technologies Used:
-- React
-- Styled-Component
-- Bootstrap
-- [Animated Social Icons](https://meko-deng.github.io/react-animated-social-icons/)
-- [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/)
-- Responsive Web Developement
-- Deployment: 
-    - [X] Vercel
-    - [X] Netlify
+| Technologies Used:                                                                  | Frontend Features: |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| - React | - Dark/Light Theme |
+| - Styled-Component | - Bootstrap Carousel |
+| - Bootstrap | - Sticky Nav Bar |
+| - [Animated Social Icons](https://meko-deng.github.io/react-animated-social-icons/) | - Tooltip |
+| - [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/) | - Fade In |
+| - Responsive Web Developement | - GitHub Stats |
+| - Deployment:     | - Social Media Icons  |
+|     - [X] Vercel  |
+|     - [X] netlify |     
 
 ### Frontend Features:
 - Dark/Light Theme

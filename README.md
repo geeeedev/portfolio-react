@@ -18,8 +18,8 @@
 | [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/) |
 | Responsive Web Developemnt |
 | Deployment:     |
-    [x] Vercel
-    [x] netlify     
+- [x] Vercel
+- [x] netlify     
 
 | Frontend Features: |
 | :--- |

@@ -9,26 +9,27 @@
 [![Deployment Status](https://img.shields.io/endpoint?url=https://devx.sh/api/deployment)](https://devx.sh)
 
 
-| Technologies Used:                                                                  | | Frontend Features: |
-| --------------------------------------------------------------------------------------- | --- | --- |
-| - React | | - Dark/Light Theme |
-| - Styled-Component | | - Bootstrap Carousel |
-| - Bootstrap | | - Sticky Nav Bar |
-| - [Animated Social Icons](https://meko-deng.github.io/react-animated-social-icons/) | | - Tooltip |
-| - [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/) | | - Fade In |
-| - Responsive Web | | - GitHub Stats |
-| - Deployment:     | | - Social Media Icons  |
-|     - [x] Vercel  |
-|     - [x] netlify |     
+| Technologies Used:                                                                  | | | Frontend Features: |
+| :--------------------------------------------------------------------------------------- | --- | --- | :--- |
+| React | | | Dark/Light Theme |
+| Styled-Component | | | Bootstrap Carousel |
+| Bootstrap | | | Sticky Nav Bar |
+| [Animated Social Icons](https://meko-deng.github.io/react-animated-social-icons/) | | | Tooltip |
+| [Animations On Scroll](https://dbramwell.github.io/react-animate-on-scroll/) | | | Fade In |
+| Responsive Web | | | GitHub Stats |
+| Deployment:     | | | Social Media Icons  |
+| [x] Vercel  |
+| [x] netlify |     
 
-### Frontend Features:
-- Dark/Light Theme
-- Bootstrap Carousel
-- Sticky Nav Bar
-- Tooltip
-- Fade In
-- GitHub Stats
-- Social Media Icons
+| ### Frontend Features: |
+| :--- |
+| - Dark/Light Theme |
+| - Bootstrap Carousel |
+| - Sticky Nav Bar |
+| - Tooltip |
+| - Fade In |
+| - GitHub Stats |
+| - Social Media Icons |
 
 ***\* Additional comments are notes I left in for my learning purposes \****
 

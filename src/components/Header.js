@@ -43,7 +43,7 @@ const NavHeader = ({ dkMode, setDkMode }) => {
         <NavLink href="#proj"> Projects </NavLink>
         <NavLink href="#skill"> Skills </NavLink>
         <NavLink href="#resume" onClick={() => setShowModal(true)}> Resume </NavLink>
-        <NavLink href="mailto:lau.gwennie@gmail.com"> Find Me </NavLink>
+        <NavLink href="mailto:lau.gwennie@gmail.com?cc=geeeedev@gmail.com&subject=Gwennie's%20Portfolio"> Find Me </NavLink>
       </NavLinkContainer>
 
       <Modal show={showModal} size="lg" onHide={() => setShowModal(false)}>

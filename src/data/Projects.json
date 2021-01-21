@@ -43,7 +43,7 @@
         "frontendStr":"React,Material UI,Material Table,Axios,Reach/Route,Moment",
         "backend":["Node","Express","Mongoose","MongoDB"],
         "database":"MongoDB",
-        "deployment":"AWS EC2",
+        "deployment":"",
         "links":{
             "repo":"https://github.com/geeeedev/Freeze-Or-Spoil",
             "site":""

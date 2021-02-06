@@ -12,7 +12,7 @@ import SocialMediaIcons from "./SocialMediaIcons";
 
 import MoonIcon from "../img/IconMoon2.png";
 import SunIcon from "../img/IconSun2.ico";
-import CV from "../data/GwennieLauResume.pdf";
+import CV from "../data/Gwennie Lau Resume.pdf";
 
 import Modal from "react-bootstrap/Modal";
 /* Import bootstrap css - can be included here or in src/index.js or App.js INSTEAD OF index.html <link> */

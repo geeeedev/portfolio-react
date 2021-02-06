@@ -100,7 +100,7 @@ const Skills = ({ dkMode }) => {
         </TechSkill>
         {/* <h2>GitHub Contributions</h2> */}
         {/* <Hr /> */}
-        <Github>
+        {/* <Github>
           <GitHubCalendar
             username="geeeedev"
             theme={(dkMode && githubDark) || githubLight}
@@ -112,7 +112,7 @@ const Skills = ({ dkMode }) => {
           >
             <ReactTooltip delayShow={50} html />
           </GitHubCalendar>
-        </Github>
+        </Github> */}
       </DescSkill>
     </ScrollAnimation>
   );

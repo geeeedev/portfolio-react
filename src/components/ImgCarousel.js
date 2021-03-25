@@ -10,7 +10,7 @@ const importAllImgs = (r) => {
   // console.log(r);
   r.keys().forEach(
     (filename) => (carouselImages[filename.replace("./", "")] = r(filename))
-    //(filename) => (carouselImages[filename] = r(filename)) // ./HeaderImg##.png: Module {}
+    //(filename) => (carouselImages[filename] = r(filename)) // ./HeaderImg##.jpg: Module {}
   );
 };
 importAllImgs(require.context("../img/", false, /^\.\/HeaderImg\d\d\.jpg$/));
@@ -20,10 +20,10 @@ importAllImgs(require.context("../img/", false, /^\.\/HeaderImg\d\d\.jpg$/));
 // console.log(`imgKeys`, Object.keys(carouselImages));
 /** expected obj
  * carouselImages = {
- *  "HeaderImg00.png": Module { default:"...imgPath" },
- *  "HeaderImg01.png": Module { default:"...imgPath" },
- *  "HeaderImg02.png": Module { default:"...imgPath" },
- *  "HeaderImg03.png": Module { default:"...imgPath" },
+ *  "HeaderImg00.jpg": Module { default:"...imgPath" },
+ *  "HeaderImg01.jpg": Module { default:"...imgPath" },
+ *  "HeaderImg02.jpg": Module { default:"...imgPath" },
+ *  "HeaderImg03.jpg": Module { default:"...imgPath" },
  * }
  */
 

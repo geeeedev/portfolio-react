@@ -4,12 +4,13 @@ import Carousel from "react-bootstrap/Carousel";
 /* Import bottstrap css - can be included here or in src/index.js or App.js INSTEAD OF index.html <link> */
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
+//Gathering my collection of Carousel Images
 const carouselImages = {};
 const importAllImgs = (r) => {
   // console.log(r);
   r.keys().forEach(
     (filename) => (carouselImages[filename.replace("./", "")] = r(filename))
-    //(filename) => (headerImages[filename] = r(filename)) // ./HeaderImg##.png: Module {}
+    //(filename) => (carouselImages[filename] = r(filename)) // ./HeaderImg##.png: Module {}
   );
 };
 importAllImgs(require.context("../img/", false, /^\.\/HeaderImg\d\d\.jpg$/));

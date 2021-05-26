@@ -6,7 +6,7 @@
 <DeployOnNetlify20210109>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aed5ba6e-38ab-46c0-97df-82e2c4136e8b/deploy-status)](https://app.netlify.com/sites/geeeedev/deploys)&nbsp;&nbsp;
-[![Deployment Status](https://img.shields.io/endpoint?url=https://devx.sh/api/deployment)](https://devx.sh)
+<[![Deployment Status](https://img.shields.io/endpoint?url=https://devx.sh/api/deployment)](https://devx.sh)>
 
 
 ### Technologies Used:

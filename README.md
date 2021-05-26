@@ -28,7 +28,7 @@
 | Sticky Nav Bar |
 | Tooltip |
 | Fade In |
-| GitHub Stats |
+| ~~GitHub Stats~~ |
 | Social Media Icons |
 
 ***\* Additional comments are notes I left in for my learning purposes \****

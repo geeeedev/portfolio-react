@@ -2,12 +2,17 @@
 ## Gwennie's Portfolio
 ### This is a Website Portfolio for my Full Stack Development Skills.
 <Dec2020>
-<DeployOnVercel20210108>
-<DeployOnNetlify20210109>
+<DeployedOnVercel20210108-Redeployed202105>
+<DeployedOnNetlify20210109>
 
-[![Vercel Status](https://img.shields.io/badge/Vercel%20Deploy-Success-green.svg)](https://geeeedev.vercel.app)&nbsp;&nbsp;
-[![Netlify Status](https://api.netlify.com/api/v1/badges/aed5ba6e-38ab-46c0-97df-82e2c4136e8b/deploy-status)](https://app.netlify.com/sites/geeeedev/deploys)
-<!-- [![Deployment Status](https://img.shields.io/endpoint?url=https://devx.sh/api/deployment)](https://devx.sh) -->
+[![Vercel Status](https://img.shields.io/static/v1?label=Vercel%20Deploy&message=Success&color=green&style=plastic&logo=vercel)](https://geeeedev.vercel.app)&nbsp;&nbsp;
+[![Netlify Status](https://img.shields.io/static/v1?label=Netlify%20Deploy&message=Success&color=green&style=plastic&logo=netlify)](https://app.netlify.com/sites/geeeedev/deploys)&nbsp;&nbsp;
+<!-- [![Vercel Status](https://img.shields.io/badge/Vercel%20Deploy-Success-green.svg)](https://geeeedev.vercel.app)&nbsp;&nbsp;  -shields.io simple version -->
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/aed5ba6e-38ab-46c0-97df-82e2c4136e8b/deploy-status)](https://app.netlify.com/sites/geeeedev/deploys) - Netlify version - original -->
+<!-- (https://geeeedev.netlify.app) - should provide my netlify website instead of netlify deploys above - do that when GitHub Status is fixed -->
+<!-- [![Deployment Status](https://img.shields.io/endpoint?url=https://devx.sh/api/deployment)](https://devx.sh) -NoLongerValidFrVercel -->
+
+
 
 
 ### Technologies Used:
